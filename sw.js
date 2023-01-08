@@ -90,6 +90,12 @@ let cdn = {
             "url": "https://vercel-china.yt-blog.top"
         }, cfcdn: {
             "url": "https://cfcdn.yt-blog.top"
+        }, github: {
+            "url": "http://github.yt-blog.top"
+        }, cfpage: {
+            "url": "https://cfpage.yt-blog.top"
+        }, cfpage2: {
+            "url": "https://fgaoxing-github-io.pages.dev"
         }
     }
 }
