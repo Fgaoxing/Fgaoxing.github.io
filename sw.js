@@ -231,8 +231,8 @@ const handle = async function (req) {
         }
         for (let j in cdn[i]) {
             let urls = []
-            myconsole.info((cdn[i][j].indexof('https://')<0)?cdn[i][j].url.split('https://')[1].split('/')[0]:cdn[i][j].url.split('http://')[1].split('/')[0])
-            if (domain == ((cdn[i][j].indexof('https://')<0)?cdn[i][j].url.split('https://')[1].split('/')[0]:cdn[i][j].url.split('http://')[1].split('/')[0]) && urlStr.match(cdn[i][j].url)) {
+            myconsole.info((cdn[i][j].indexof('https://')<0)?cdn[i][j].url.split('http://')[1].split('/')[0]:cdn[i][j].url.split('https://')[1].split('/')[0])
+            if (domain == ((cdn[i][j].indexof('https://')<0)?cdn[i][j].url.split('http://')[1].split('/')[0]:cdn[i][j].url.split('https://')[1].split('/')[0]) && urlStr.match(cdn[i][j].url)) {
                 let urls = []
                 for (let k in cdn[i]) {
                     urls.push(urlStr.replace(cdn[i][j].url, cdn[i][k].url))
