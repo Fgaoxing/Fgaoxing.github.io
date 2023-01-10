@@ -274,8 +274,7 @@ const handle = async function (req) {
     })
 }
 
-const update = await function (req) {
-    const handle = async function (req) {
+const updata = await function (req) {
         const urlStr = req.url
         let urlObj = new URL(urlStr)
         const pathname = urlObj.href.substr(urlObj.origin.length)
@@ -283,6 +282,7 @@ const update = await function (req) {
         if (pathname.match(/\/sw\.js/g)) {
             return fetch(req)
         }
+        myconsole.info('刷新'+urlStr)
         for (let i in cdn) {
             if (urlStr in out_url) {
                 myconsole.info(urlStr+' 被禁止加速')
@@ -309,7 +309,6 @@ const update = await function (req) {
             }
         }
     }
-}
 
 self.addEventListener('fetch', async event => {
     try {
@@ -326,7 +325,7 @@ setInterval(function () {
    //刷新
     caches.keys().then(function(keyList) {
         return Promise.all(keyList.map(function(key) {
-                return update(key)
+                return updata(key)
             }))
         }).catch(function (err) {
             myconsole.error(err);
