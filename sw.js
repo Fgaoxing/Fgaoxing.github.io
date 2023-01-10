@@ -89,7 +89,7 @@ let cdn = {
         }, vercelcn: {
             "url": "https://vercel-china.yt-blog.top"
         }, github: {
-            "url": "http://github.yt-blog.top"
+            "url": "https://github.yt-blog.top"
         }, cfpage: {
             "url": "https://cfpage.yt-blog.top"
         }, cfpage2: {
