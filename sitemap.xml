@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yt-blog.top/51672/</loc>
+    
+    <lastmod>2023-01-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yt-blog.top/2022/03/17/08/17/00/win11%E6%AD%A3%E5%BC%8F%E7%89%88%E5%AE%89%E8%A3%85%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6-%E4%B8%8D%E9%9C%80%E8%A6%81%E7%AC%AC%E4%B8%89%E6%96%B9%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
     
     <lastmod>2023-01-10</lastmod>
@@ -93,15 +102,6 @@
   
   <url>
     <loc>https://www.yt-blog.top/2022/03/29/00/00/00/%E8%99%9A%E6%8B%9F%E7%9A%84%E6%88%91/</loc>
-    
-    <lastmod>2023-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/NoNetwork/index.html</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -228,6 +228,15 @@
   
   <url>
     <loc>https://www.yt-blog.top/docs/simplest-server/start/index.html</loc>
+    
+    <lastmod>2023-01-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/NoNetwork/index.html</loc>
     
     <lastmod>2023-01-10</lastmod>
     
@@ -404,6 +413,13 @@
   
   <url>
     <loc>https://www.yt-blog.top/tags/hexo/</loc>
+    <lastmod>2023-01-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/simplest-server/</loc>
     <lastmod>2023-01-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
