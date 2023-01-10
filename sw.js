@@ -212,7 +212,8 @@ const lfetch = function (urls, url) {
     return Promise.any(urls.map(urls => {
         return new Promise((resolve, reject) => {
             fetch(urls, {
-                signal: controller.signal
+                signal: controller.signal,
+                mode: (urls.indexOf('https://netlify.yt-blog.top')!==-1)?'no-cors':'cors'
             }).then(PauseProgress).then(res => {
                 if (res.status == 200) {
                     controller.abort();
