@@ -286,4 +286,16 @@ self.addEventListener('fetch', async event => {
 self.addEventListener('activate', async function (installEvent) {
     self.clients.claim()
 })
+setInterval(function () {
+   //刷新
+    caches.keys().then(function(keyList) {
+        return Promise.all(keyList.map(function(key) {
+                return caches.delete(key).then(function (){
+                    handle(key)
+                });
+            }
+        }).catch(function (err) {
+            myconsole.error(err);
+    });
+},500)
 
