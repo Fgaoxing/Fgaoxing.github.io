@@ -360,7 +360,9 @@ const updata = async function (req) {
 
 self.addEventListener('fetch', async event => {
     try {
-        console.log(handle(event.request))
+        console.log(handle(event.request).then(function (response) {
+            console.log(response)
+        }))
         event.respondWith(handle(event.request))
         myconsole.success(event.request.url + ' 请求成功')
     } catch (msg) {
