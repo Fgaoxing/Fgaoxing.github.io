@@ -236,7 +236,7 @@ const lfetch = function (urls, url) {
         })
     })).catch(function (err) {
         return new Promise(function (resolve, reject) {
-            if (err.toString() === 'Uncaught (in promise) AggregateError: All promises were rejected'){
+            if (err.toString() === 'Uncaught (in promise) AggregateError: All promises were rejected') {
                 fetch(urls, {
                     signal: controller.signal
                 }).then(PauseProgress).then(res => {
@@ -247,11 +247,11 @@ const lfetch = function (urls, url) {
                     }
                     reject(err)
                 })
-            })
             }
-            reject(err)
         })
     })
+}
+)
 }
 
 const handleerr = function (req, msg) {
