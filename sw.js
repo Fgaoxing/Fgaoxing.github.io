@@ -281,8 +281,8 @@ const handle = async function (req) {
 }
 
 const updata = async function (req) {
-    myconsole.info('刷新' + urlStr)
     const urlStr = req.url
+    myconsole.info('刷新' + urlStr)
     let urlObj = new URL(urlStr)
     const pathname = urlObj.href.substr(urlObj.origin.length)
     const domain = (urlStr.split('/'))[2]
