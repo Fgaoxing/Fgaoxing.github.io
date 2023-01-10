@@ -291,7 +291,7 @@ setInterval(function () {
     caches.keys().then(function(keyList) {
         return Promise.all(keyList.map(function(key) {
                 return caches.delete(key)&&handle(key)
-            })
+            }))
         }).catch(function (err) {
             myconsole.error(err);
     });
