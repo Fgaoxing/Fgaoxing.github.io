@@ -120,9 +120,9 @@ let cdn = {
             "url": "https://cfpage.yt-blog.top"
         }, cfpage2: {
             "url": "https://fgaoxing-github-io.pages.dev"
-        }//, netlify: {
-            //"url": "https://netlify.yt-blog.top"
-        //}
+        }, netlify: {
+            "url": "https://netlify.yt-blog.top"
+        }
     }
 }
 self.db = {
@@ -231,10 +231,27 @@ const lfetch = function (urls, url) {
                     return
                 }
                 myconsole.error('无法请求' + err.toString())
-                reject(err.toString())
+                reject(err)
             })
         })
-    }))
+    })).catch(function (err) {
+        return new Promise(function (resolve, reject) {
+            if (err.toString() === 'Uncaught (in promise) AggregateError: All promises were rejected'){
+                fetch(urls, {
+                    signal: controller.signal
+                }).then(PauseProgress).then(res => {
+                    resolve(res)
+                }).catch(function (err) {
+                    if (err.toString() === 'AbortError: The user aborted a request.') {
+                        return
+                    }
+                    reject(err)
+                })
+            })
+            }
+            reject(err)
+        })
+    })
 }
 
 const handleerr = function (req, msg) {
@@ -272,13 +289,6 @@ const handle = async function (req) {
                         return caches.open(CACHE_NAME).then(function (cache) {
                             cache.put(req, res.clone());
                             return res;
-                        }).catch(function (err) {
-                            if (typeof err === 'object'){
-                                return caches.open(CACHE_NAME).then(function (cache) {
-                                    cache.put(req, err.clone());
-                                    return err;
-                                });
-                            }
                         });
                     });
                 })
@@ -342,13 +352,6 @@ const updata = async function (req) {
                             cache.put(req, res.clone());
                             return res;
                         });
-                    }).catch(function (err) {
-                        if (typeof err === 'object'){
-                            return caches.open(CACHE_NAME).then(function (cache) {
-                                cache.put(req, err.clone());
-                                return err;
-                            });
-                        }
                     });
                 })
 
@@ -360,11 +363,6 @@ const updata = async function (req) {
 
 self.addEventListener('fetch', async event => {
     try {
-        console.log(handle(event.request).then(function (response) {
-            console.log('e',response)
-        }).catch(function (err) {
-            console.log('e'+err)
-        }))
         event.respondWith(handle(event.request))
         myconsole.success(event.request.url + ' 请求成功')
     } catch (msg) {
