@@ -24,11 +24,11 @@ let cdn = {
             "url": "https://cdn.jsdelivr.net/gh"
         }, tianli1: {
             "url": "https://cdn1.tianli0.top/gh"
-        },tianli2: {
+        }, tianli2: {
             "url": "https://cdn2.tianli0.top/gh"
-        },tianli3: {
+        }, tianli3: {
             "url": "https://cdn3.tianli0.top/gh"
-        },tianli4: {
+        }, tianli4: {
             "url": "https://cdn4.tianli0.top/gh"
         }, tianli5: {
             "url": "https://cdn5.tianli0.top/gh"
@@ -38,6 +38,8 @@ let cdn = {
             "url": "https://cdn.oblivionocean.top/gh"
         }, cky: {
             "url": "https://jsew.cky.codes/gh"
+        }, ftft: {
+            "url": "https://jsd.iftft.com/gh"
         }
     }, "combine": {
         jsdelivr: {
@@ -50,8 +52,7 @@ let cdn = {
             "url": "https://npm.elemecdn.com"
         }, jsdelivr: {
             "url": "https://cdn.jsdelivr.net/npm"
-        },
-        jjz: {
+        }, jjz: {
             "url": "https://jsd.onmicrosoft.cn/npm"
         }, jjz_unpkg: {
             "url": "https://unpkg.onmicrosoft.cn"
@@ -63,11 +64,11 @@ let cdn = {
             "url": "https://cdn.bilicdn.tk/npm"
         }, tianli1: {
             "url": "https://cdn1.tianli0.top/npm"
-        },tianli2: {
+        }, tianli2: {
             "url": "https://cdn2.tianli0.top/npm"
-        },tianli3: {
+        }, tianli3: {
             "url": "https://cdn3.tianli0.top/npm"
-        },tianli4: {
+        }, tianli4: {
             "url": "https://cdn4.tianli0.top/npm"
         }, tianli5: {
             "url": "https://cdn5.tianli0.top/npm"
@@ -79,8 +80,10 @@ let cdn = {
             "url": "https://cdn1.qystu.cc/npm"
         }, afdelivr: {
             "url": "https://cdn.afdelivr.com/npm"
-        },cky: {
+        }, cky: {
             "url": "https://jsew.cky.codes/npm"
+        }, sourcegcdn: {
+            "url": "https://npm.sourcegcdn.com"
         }
     }, "cdnjs": {
         cdnjs: {
@@ -97,6 +100,12 @@ let cdn = {
             "url": "https://mirrors.sustech.edu.cn/cdnjs/ajax/libs"
         }, bootcdn: {
             "url": "https://cdn.bootcdn.net/ajax/libs"
+        }, baomitu: {
+            "url": "https://lib.baomitu.com"
+        }, staticfile: {
+            "url": "https://cdn.staticfile.org"
+        }, sourcegcdn: {
+            "url": "https://cdnjs.sourcegcdn.com/ajax/libs"
         }
     }, "myblog": {
         mian: {
