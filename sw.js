@@ -274,6 +274,42 @@ const handle = async function (req) {
     })
 }
 
+const update = await function (req) {
+    const handle = async function (req) {
+        const urlStr = req.url
+        let urlObj = new URL(urlStr)
+        const pathname = urlObj.href.substr(urlObj.origin.length)
+        const domain = (urlStr.split('/'))[2]
+        if (pathname.match(/\/sw\.js/g)) {
+            return fetch(req)
+        }
+        for (let i in cdn) {
+            if (urlStr in out_url) {
+                myconsole.info(urlStr+' 被禁止加速')
+                break
+            }
+            for (let j in cdn[i]) {
+                let urls = []
+                if (domain == ((cdn[i][j].url.indexOf('https://') < 0)?cdn[i][j].url.split('http://')[1].split('/')[0]:cdn[i][j].url.split('https://')[1].split('/')[0]) && urlStr.match(cdn[i][j].url)) {
+                    let urls = []
+                    for (let k in cdn[i]) {
+                        urls.push(urlStr.replace(cdn[i][j].url, cdn[i][k].url))
+                    }
+                    return caches.match(req).then(function (resp) {
+                        return lfetch(urls, urlStr).then(function (res) {
+                            return caches.open(CACHE_NAME).then(function (cache) {
+                                cache.put(req, res.clone());
+                                return res;
+                            });
+                        });
+                    })
+
+
+                }
+            }
+        }
+    }
+}
 
 self.addEventListener('fetch', async event => {
     try {
@@ -290,7 +326,7 @@ setInterval(function () {
    //刷新
     caches.keys().then(function(keyList) {
         return Promise.all(keyList.map(function(key) {
-                return caches.delete(key)&&handle(key)
+                return update(key)
             }))
         }).catch(function (err) {
             myconsole.error(err);
