@@ -338,5 +338,5 @@ setInterval(function () {
             myconsole.error(err);
         });
     })
-}, 15000)
+}, 30000)
 
