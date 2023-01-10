@@ -251,8 +251,6 @@ const lfetch = function (urls, url) {
         })
     })
 }
-)
-}
 
 const handleerr = function (req, msg) {
     if ((req.url.split('/'))[2] === My_Domain || (req.url.split('/'))[2].indexOf('localhost') !== -1) {
