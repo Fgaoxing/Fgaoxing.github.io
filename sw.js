@@ -120,6 +120,8 @@ let cdn = {
             "url": "https://cfpage.yt-blog.top"
         }, cfpage2: {
             "url": "https://fgaoxing-github-io.pages.dev"
+        }, netlify: {
+            "url": "https://netlify.yt-blog.top"
         }
     }
 }
@@ -229,7 +231,7 @@ const lfetch = function (urls, url) {
                     return
                 }
                 myconsole.error('无法请求' + err.toString())
-                reject(err)
+                reject(err.toString())
             })
         })
     }))
@@ -270,6 +272,13 @@ const handle = async function (req) {
                         return caches.open(CACHE_NAME).then(function (cache) {
                             cache.put(req, res.clone());
                             return res;
+                        }).catch(function (err) {
+                            if (typeof err === 'object'){
+                                return caches.open(CACHE_NAME).then(function (cache) {
+                                    cache.put(req, err.clone());
+                                    return err;
+                                });
+                            }
                         });
                     });
                 })
@@ -333,6 +342,13 @@ const updata = async function (req) {
                             cache.put(req, res.clone());
                             return res;
                         });
+                    }).catch(function (err) {
+                        if (typeof err === 'object'){
+                            return caches.open(CACHE_NAME).then(function (cache) {
+                                cache.put(req, err.clone());
+                                return err;
+                            });
+                        }
                     });
                 })
 
