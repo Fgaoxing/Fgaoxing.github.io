@@ -28,8 +28,6 @@ let cdn = {
             "url": "https://cdn2.tianli0.top/gh"
         }, tianli3: {
             "url": "https://cdn3.tianli0.top/gh"
-        }, tianli4: {
-            "url": "https://cdn4.tianli0.top/gh"
         }, tianli5: {
             "url": "https://cdn5.tianli0.top/gh"
         }, cdnn: {
@@ -68,8 +66,6 @@ let cdn = {
             "url": "https://cdn2.tianli0.top/npm"
         }, tianli3: {
             "url": "https://cdn3.tianli0.top/npm"
-        }, tianli4: {
-            "url": "https://cdn4.tianli0.top/npm"
         }, tianli5: {
             "url": "https://cdn5.tianli0.top/npm"
         }, unpkg: {
@@ -80,8 +76,6 @@ let cdn = {
             "url": "https://cdn1.qystu.cc/npm"
         }, afdelivr: {
             "url": "https://cdn.afdelivr.com/npm"
-        }, cky: {
-            "url": "https://jsew.cky.codes/npm"
         }, sourcegcdn: {
             "url": "https://npm.sourcegcdn.com"
         }
