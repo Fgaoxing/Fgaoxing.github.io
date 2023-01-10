@@ -110,15 +110,6 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/NoNetwork/index.html</loc>
-    
-    <lastmod>2023-01-10</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/about/index.html</loc>
     
     <lastmod>2023-01-10</lastmod>
@@ -237,6 +228,15 @@
   
   <url>
     <loc>https://www.yt-blog.top/docs/simplest-server/start/index.html</loc>
+    
+    <lastmod>2023-01-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/NoNetwork/index.html</loc>
     
     <lastmod>2023-01-10</lastmod>
     

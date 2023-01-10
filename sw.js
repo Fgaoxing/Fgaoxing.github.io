@@ -361,7 +361,9 @@ const updata = async function (req) {
 self.addEventListener('fetch', async event => {
     try {
         console.log(handle(event.request).then(function (response) {
-            console.log(response)
+            console.log('e',response)
+        }).catch(function (err) {
+            console.log('e'+err)
         }))
         event.respondWith(handle(event.request))
         myconsole.success(event.request.url + ' 请求成功')
