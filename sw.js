@@ -120,9 +120,9 @@ let cdn = {
             "url": "https://cfpage.yt-blog.top"
         }, cfpage2: {
             "url": "https://fgaoxing-github-io.pages.dev"
-        }, netlify: {
-            "url": "https://netlify.yt-blog.top"
-        }
+        }//, netlify: {
+            //"url": "https://netlify.yt-blog.top"
+        //}
     }
 }
 self.db = {
