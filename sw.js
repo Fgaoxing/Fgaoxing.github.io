@@ -3,7 +3,7 @@ var CACHE_NAME = 'MyCache';
 let cachelist = ['/404.html', '/NoNetwork/'];
 let not_network = '/NoNetwork/';
 let My_Domain = 'www.yt-blog.top'
-let out_url=['https://npm.elemecdn.com/@waline/client@v2/dist/waline.js', 'https://npm.elemecdn.com/@waline/client@v2/dist/waline.css', 'https://npm.elemecdn.com/aplayer@1.10/dist/APlayer.min.js', 'https://npm.elemecdn.com/aplayer@1.10/dist/APlayer.min.css']
+let out_url = ['https://npm.elemecdn.com/@waline/client@v2/dist/waline.js', 'https://npm.elemecdn.com/@waline/client@v2/dist/waline.css', 'https://npm.elemecdn.com/aplayer@1.10/dist/APlayer.min.js', 'https://npm.elemecdn.com/aplayer@1.10/dist/APlayer.min.css']
 let debug = true;
 let myconsole = {
     success: (m) => {
@@ -36,7 +36,7 @@ let cdn = {
     }, "combine": {
         jsdelivr: {
             "url": "https://cdn.jsdelivr.net/combine"
-        },qycdn: {
+        }, qycdn: {
             "url": "https://cdn.chuqis.com/combine"
         }
 
@@ -68,7 +68,7 @@ let cdn = {
             "url": "https://cdn.chuqis.com/npm"
         }
     }, "cdnjs": {
-        cdnjs:{
+        cdnjs: {
             "url": "https://cdnjs.cloudflare.com/ajax/libs"
         }, jsdelivr: {
             "url": "https://cdn.jsdelivr.net/gh/cdnjs/cdnjs@master/ajax/libs"
@@ -78,7 +78,7 @@ let cdn = {
             "url": "https://cdn.yt-blog.top/gh/cdnjs/cdnjs@master/ajax/libs"
         }, xyh: {
             "url": "https://cdn.oblivionocean.top/gh/cdnjs/cdnjs@master/ajax/libs"
-        }, nkd:{
+        }, nkd: {
             "url": "https://mirrors.sustech.edu.cn/cdnjs/ajax/libs"
         }
     }, "myblog": {
@@ -89,7 +89,7 @@ let cdn = {
         }, vercelcn: {
             "url": "https://vercel-china.yt-blog.top"
         }, github: {
-            "url": "https://github.yt-blog.top"
+            "url": "http://github.yt-blog.top"
         }, cfpage: {
             "url": "https://cfpage.yt-blog.top"
         }, cfpage2: {
@@ -199,6 +199,9 @@ const lfetch = function (urls, url) {
                     reject(res)
                 }
             }).catch(function (err) {
+                if (err.toString() === 'AbortError: The user aborted a request.') {
+                    return
+                }
                 myconsole.error('无法请求' + err.toString())
                 reject(err)
             })
@@ -226,12 +229,12 @@ const handle = async function (req) {
     }
     for (let i in cdn) {
         if (urlStr in out_url) {
-            myconsole.info(urlStr+' 被禁止加速')
+            myconsole.info(urlStr + ' 被禁止加速')
             break
         }
         for (let j in cdn[i]) {
             let urls = []
-            if (domain == ((cdn[i][j].url.indexOf('https://') < 0)?cdn[i][j].url.split('http://')[1].split('/')[0]:cdn[i][j].url.split('https://')[1].split('/')[0]) && urlStr.match(cdn[i][j].url)) {
+            if (domain == ((cdn[i][j].url.indexOf('https://') < 0) ? cdn[i][j].url.split('http://')[1].split('/')[0] : cdn[i][j].url.split('https://')[1].split('/')[0]) && urlStr.match(cdn[i][j].url)) {
                 let urls = []
                 for (let k in cdn[i]) {
                     urls.push(urlStr.replace(cdn[i][j].url, cdn[i][k].url))
@@ -251,17 +254,20 @@ const handle = async function (req) {
     }
     myconsole.warning(req.url + ' 没有加速')
     return fetch(req).then(function (res) {
-        if (!res) { throw 'error' } //1
+        if (!res) {
+            throw 'error'
+        } //1
         return caches.open(CACHE_NAME).then(function (cache) {
-            if (req.url.split(':')[0]==='http'||req.url.split(':')[0]==='https') {
+            if (req.url.split(':')[0] === 'http' || req.url.split(':')[0] === 'https') {
                 cache.delete(req).catch(function (err) {
                 });
                 cache.put(req, res.clone()).catch(function (err) {
                 });
             }
             return res;
-        }).catch(function (err) {});
-    }).catch(function (e){
+        }).catch(function (err) {
+        });
+    }).catch(function (e) {
         myconsole.error(req.url + ' 请求失败')
         if (domain === My_Domain || (domain.indexOf('localhost') !== -1)) {
             return caches.match(req).then(function (resp) {
@@ -275,40 +281,40 @@ const handle = async function (req) {
 }
 
 const updata = async function (req) {
-        const urlStr = req.url
-        let urlObj = new URL(urlStr)
-        const pathname = urlObj.href.substr(urlObj.origin.length)
-        const domain = (urlStr.split('/'))[2]
-        if (pathname.match(/\/sw\.js/g)) {
-            return fetch(req)
+    myconsole.info('刷新' + urlStr)
+    const urlStr = req.url
+    let urlObj = new URL(urlStr)
+    const pathname = urlObj.href.substr(urlObj.origin.length)
+    const domain = (urlStr.split('/'))[2]
+    if (pathname.match(/\/sw\.js/g)) {
+        return fetch(req)
+    }
+    for (let i in cdn) {
+        if (urlStr in out_url) {
+            myconsole.info(urlStr + ' 被禁止加速')
+            break
         }
-        myconsole.info('刷新'+urlStr)
-        for (let i in cdn) {
-            if (urlStr in out_url) {
-                myconsole.info(urlStr+' 被禁止加速')
-                break
-            }
-            for (let j in cdn[i]) {
+        for (let j in cdn[i]) {
+            let urls = []
+            if (domain == ((cdn[i][j].url.indexOf('https://') < 0) ? cdn[i][j].url.split('http://')[1].split('/')[0] : cdn[i][j].url.split('https://')[1].split('/')[0]) && urlStr.match(cdn[i][j].url)) {
                 let urls = []
-                if (domain == ((cdn[i][j].url.indexOf('https://') < 0)?cdn[i][j].url.split('http://')[1].split('/')[0]:cdn[i][j].url.split('https://')[1].split('/')[0]) && urlStr.match(cdn[i][j].url)) {
-                    let urls = []
-                    for (let k in cdn[i]) {
-                        urls.push(urlStr.replace(cdn[i][j].url, cdn[i][k].url))
-                    }
-                    return caches.match(req).then(function (resp) {
-                        return lfetch(urls, urlStr).then(function (res) {
-                            return caches.open(CACHE_NAME).then(function (cache) {
-                                cache.put(req, res.clone());
-                                return res;
-                            });
-                        });
-                    })
-
-
+                for (let k in cdn[i]) {
+                    urls.push(urlStr.replace(cdn[i][j].url, cdn[i][k].url))
                 }
+                return caches.match(req).then(function (resp) {
+                    return lfetch(urls, urlStr).then(function (res) {
+                        return caches.open(CACHE_NAME).then(function (cache) {
+                            cache.put(req, res.clone());
+                            return res;
+                        });
+                    });
+                })
+
+
             }
         }
     }
+}
 
 self.addEventListener('fetch', async event => {
     try {
@@ -322,13 +328,13 @@ self.addEventListener('activate', async function (installEvent) {
     self.clients.claim()
 })
 setInterval(function () {
-   //刷新
-    caches.keys().then(function(keyList) {
-        return Promise.all(keyList.map(function(key) {
-                return updata(key)
-            }))
-        }).catch(function (err) {
-            myconsole.error(err);
+    //刷新
+    caches.keys().then(function (keyList) {
+        return Promise.all(keyList.map(function (key) {
+            return updata(key)
+        }))
+    }).catch(function (err) {
+        myconsole.error(err);
     });
-},500)
+}, 500)
 
