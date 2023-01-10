@@ -274,7 +274,7 @@ const handle = async function (req) {
     })
 }
 
-const updata = await function (req) {
+const updata = async function (req) {
         const urlStr = req.url
         let urlObj = new URL(urlStr)
         const pathname = urlObj.href.substr(urlObj.origin.length)
