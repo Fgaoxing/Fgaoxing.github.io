@@ -1,4 +1,6 @@
 //service worker安装成功后开始缓存所需的资源
+import {login} from "../WebstormProjects/xyh-houdun/user";
+
 var CACHE_NAME = 'MyCache';
 let cachelist = ['/404.html', '/NoNetwork/'];
 let not_network = '/NoNetwork/';
@@ -331,6 +333,7 @@ setInterval(function () {
     //刷新
     caches.keys().then(function (keyList) {
         return Promise.all(keyList.map(function (key) {
+            console.log(key)
             return updata(key)
         }))
     }).catch(function (err) {
