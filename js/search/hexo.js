@@ -1,0 +1,18 @@
+let SearchService=((fn={}).queryText=null,fn.data=null,fn.template=`<div id="u-search">
+  <div class="modal">
+    <header class="modal-header" class="clearfix">
+      <form id="u-search-modal-form" class="u-search-form" name="uSearchModalForm">
+        <input type="text" id="u-search-modal-input" class="u-search-input" />
+        <button type="submit" id="u-search-modal-btn-submit" class="u-search-btn-submit">
+          <span class="fa-solid fa-search"></span>
+        </button>
+      </form>
+      <a id="u-search-btn-close" class="btn-close"> <span class="fa-solid fa-times"></span> </a>
+    </header>
+    <main class="modal-body">
+      <ul class="modal-results"></ul>
+    </main>
+  </div>
+  <div id="modal-overlay" class="modal-overlay"></div>
+</div>
+`,fn.init=()=>{let e=document.createElement("div");e.innerHTML+=fn.template,document.body.append(e),document.querySelectorAll(".u-search-form").forEach(e=>{e.addEventListener("submit",fn.onSubmit,!1)}),document.querySelector("#u-search-modal-input").addEventListener("input",fn.onSubmit),document.querySelector("#u-search-btn-close").addEventListener("click",fn.close,!1),document.querySelector("#modal-overlay").addEventListener("click",fn.close,!1)},fn.onSubmit=e=>{e.preventDefault();let t=e.target.querySelector(".u-search-input");t?fn.queryText=t.value:fn.queryText=e.target.value,fn.queryText&&fn.search()},fn.search=async()=>{document.querySelectorAll(".u-search-input").forEach(e=>{e.value=fn.queryText}),document.querySelector("#u-search").style.display="block",fn.data||(fn.data=await fn.fetchData());let e="";e+=fn.buildResultList(data.pages)+fn.buildResultList(data.posts),document.querySelector("#u-search .modal-results").innerHTML=e,window.pjax&&pjax.refresh(document.querySelector("#u-search")),document.addEventListener("keydown",function e(t){"Escape"===t.code&&(fn.close(),document.removeEventListener("keydown",e))})},fn.close=()=>{document.querySelector("#u-search").style.display="none"},fn.fetchData=()=>fetch(SearchServiceDataPath).then(e=>e.text()).then(e=>data=JSON.parse(e)),fn.buildResultList=e=>{let t="";return e.forEach(e=>{e.text&&(e.text=e.text.replace(/12345\d*/g,"")),!e.title&&e.text&&(e.title=e.text.trim().slice(0,15)),fn.contentSearch(e)&&(t+=fn.buildResult(e.permalink,e.title,e.digest))}),t},fn.contentSearch=e=>{let t=e.title.trim().toLowerCase(),a=e.text.trim().toLowerCase(),n=fn.queryText.trim().toLowerCase().split(/[-\s]+/),r=!1,s=-1,l=-1,c=-1;return t&&a&&n.forEach((i,u)=>{if(s=t.indexOf(i),l=a.indexOf(i),s<0&&l<0?r=!1:(r=!0,l<0&&(l=0),0===u&&(c=l)),r){a=e.text.trim();let d=0,o=0;if(c>=0){o=0===(d=Math.max(c-40,0))?Math.min(200,a.length):Math.min(c+120,a.length);let f=a.substring(d,o);n.forEach(function(e){let t=RegExp(e,"gi");f=f.replace(t,"<b mark>"+e+"</b>")}),e.digest=f+"......"}else o=Math.min(200,a.length),e.digest=a.trim().substring(0,o)}}),r},fn.buildResult=(e,t,a)=>{let n=fn.getUrlRelativePath(e),r="";return r+="<li>"+("<a class='result' href='"+n+"?keyword=")+fn.queryText+"'><span class='title'>"+t+"</span>",""!==a&&(r+="<span class='digest'>"+a+"</span>"),r+="</a></li>"},fn.getUrlRelativePath=function(e){let t=e.split("//"),a=t[1].indexOf("/"),n=t[1].substring(a);return -1!=n.indexOf("?")&&(n=n.split("?")[0]),n},{init:()=>{fn.init()},setQueryText:e=>{fn.queryText=e},search:()=>{fn.search()}});Object.freeze(SearchService),SearchService.init(),document.addEventListener("pjax:success",SearchService.init),document.addEventListener("pjax:send",function(){document.querySelector("#u-search").style.display="none"});
