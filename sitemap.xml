@@ -2,51 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.yt-blog.top/tags/index.html</loc>
-    
-    <lastmod>2023-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/timeline/index.html</loc>
-    
-    <lastmod>2023-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0/index.html</loc>
-    
-    <lastmod>2023-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/my/help/index.html</loc>
-    
-    <lastmod>2023-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/my/%E5%8F%82%E6%95%B0%E5%B8%AE%E5%8A%A9/index.html</loc>
-    
-    <lastmod>2023-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/2022/03/17/08/17/00/win11%E6%AD%A3%E5%BC%8F%E7%89%88%E5%AE%89%E8%A3%85%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6-%E4%B8%8D%E9%9C%80%E8%A6%81%E7%AC%AC%E4%B8%89%E6%96%B9%E8%99%9A%E6%8B%9F%E6%9C%BA/</loc>
     
     <lastmod>2023-01-15</lastmod>
@@ -128,15 +83,6 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/2021/11/14/12/12/00/%E8%87%AA%E5%BB%BA%E4%B8%8B%E8%BD%BD%E5%BA%93/</loc>
-    
-    <lastmod>2023-01-15</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/2022/03/29/00/00/00/%E8%99%9A%E6%8B%9F%E7%9A%84%E6%88%91/</loc>
     
     <lastmod>2023-01-15</lastmod>
@@ -146,7 +92,61 @@
   </url>
   
   <url>
+    <loc>https://www.yt-blog.top/2021/11/14/12/12/00/%E8%87%AA%E5%BB%BA%E4%B8%8B%E8%BD%BD%E5%BA%93/</loc>
+    
+    <lastmod>2023-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yt-blog.top/categories/index.html</loc>
+    
+    <lastmod>2023-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/index.html</loc>
+    
+    <lastmod>2023-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/timeline/index.html</loc>
+    
+    <lastmod>2023-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0/index.html</loc>
+    
+    <lastmod>2023-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/my/help/index.html</loc>
+    
+    <lastmod>2023-01-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/my/%E5%8F%82%E6%95%B0%E5%B8%AE%E5%8A%A9/index.html</loc>
     
     <lastmod>2023-01-15</lastmod>
     
