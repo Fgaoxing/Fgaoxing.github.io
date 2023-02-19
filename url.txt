@@ -1,3 +1,4 @@
+https://www.yt-blog.top/404.html
 https://www.yt-blog.top/sw.js
 https://www.yt-blog.top/categories/index.html
 https://www.yt-blog.top/tags/index.html
@@ -12,7 +13,6 @@ https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/
 https://www.yt-blog.top/20211111/1612/%E6%88%91%E5%81%9A%E4%BA%86%E4%B8%AA%E9%9F%B3%E6%95%88%E5%8C%85/
 https://www.yt-blog.top/20211103/2315/%E7%BB%83%E7%AC%94/
 https://www.yt-blog.top/20211114/1212/%E8%87%AA%E5%BB%BA%E4%B8%8B%E8%BD%BD%E5%BA%93/
-https://www.yt-blog.top/404.html
 https://www.yt-blog.top/20220430/1609/tool-js/
 https://www.yt-blog.top/20211012/0939/%E5%9B%BD%E5%BA%86/
 https://www.yt-blog.top/20211108/0834/hexo%E5%AE%89%E8%A3%85/
