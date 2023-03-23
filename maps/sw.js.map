@@ -1,1 +1,0 @@
-{"version":3,"file":"../sw.js","names":["handle","async","fetch","e","self","addEventListener","respondWith","request"],"sources":["sw.js"],"mappings":"AAAA,MAAMA,OAAOC,SAASC,MAAMC,GAAGC,KAAKC,iBAAiB,SAAQ,MAACJ,IAAUE,EAAEG,YAAYN,OAAOG,EAAEI,SAAU","sourcesContent":["const handle=async e=>fetch(e);self.addEventListener(\"fetch\",(async e=>{e.respondWith(handle(e.request))}));"]}
