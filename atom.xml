@@ -281,7 +281,7 @@
     <link href="https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/"/>
     <id>https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/</id>
     <published>2022-04-06T00:00:00.000Z</published>
-    <updated>2023-03-23T15:22:52.350Z</updated>
+    <updated>2023-04-07T15:36:28.687Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://bu.dusays.com/2022/04/06/13cfa5c2f39aa.png" width="100px" height="100px"></img></p><h2 id="前言">前言</h2><p>学校要求上网课开摄像头，关键是前后各一个，我就只有有一个设备所以就要这样</p><h2 id="需求">需求</h2><blockquote><p>Win电脑</p></blockquote><h2 id="方法">方法</h2><h3 id="OBS">OBS</h3><p><a href="https://obsproject.com/zh-cn/download">下载 | OBS</a><br><a href="https://obsproject.com/forum/resources/obs-virtualcam.949/">下载OBS Virtualcam插件</a><br>选择1/4个摄像头<br>打开OBS</p><p><img src="https://bu.dusays.com/2022/04/06/154492e6089f3.png" alt="https://bu.dusays.com/2022/04/06/154492e6089f3.png"><br>左右摆放<br><img src="https://bu.dusays.com/2022/04/06/cdcf1c6dec957.png" alt="cdcf1c6dec957.png (1982×1120) (dusays.com)"><br>然后选择这个摄像头<br><img src="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" alt="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png"></p><h2 id="注意">注意</h2><p>使用时请保证电脑性能，且电脑摄像头没有占用。</p><blockquote><p>本教程仅支持Windows，这是OBS Virtualcam的原因。</p></blockquote>]]></content>
     
@@ -340,7 +340,7 @@
     <link href="https://www.yt-blog.top/20220317/0817/win11%E6%AD%A3%E5%BC%8F%E7%89%88%E5%AE%89%E8%A3%85%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6-%E4%B8%8D%E9%9C%80%E8%A6%81%E7%AC%AC%E4%B8%89%E6%96%B9%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
     <id>https://www.yt-blog.top/20220317/0817/win11%E6%AD%A3%E5%BC%8F%E7%89%88%E5%AE%89%E8%A3%85%E5%AE%89%E5%8D%93%E8%BD%AF%E4%BB%B6-%E4%B8%8D%E9%9C%80%E8%A6%81%E7%AC%AC%E4%B8%89%E6%96%B9%E8%99%9A%E6%8B%9F%E6%9C%BA/</id>
     <published>2022-03-17T08:17:00.000Z</published>
-    <updated>2023-03-23T15:22:52.350Z</updated>
+    <updated>2023-04-07T15:36:28.687Z</updated>
     
     <content type="html"><![CDATA[<h3 id="准备工具">准备工具</h3><blockquote><ol><li>Win11电脑一台</li><li>一双手</li></ol></blockquote><h3 id="安装安卓">安装安卓</h3><p>首先我们先打开设置<br>时间和地区&gt;语言和区域</p><p><img src="https://bu.dusays.com/2022/03/17/e7953f402f157.png" alt="https://bu.dusays.com/2022/03/17/e7953f402f157.png"><br>黄色区域调整成美国<br>然后下载安卓</p><span class='btn'><a class="button" href='https://www.microsoft.com/en-us/p/windows-subsystem-for-android-with-amazon-appstore/9p3395vx91nr#activetab=pivot:overviewtab' title='下载安卓'><i class='fas fa-download'></i>下载安卓</a></span><p>点击GET，跳转到应用商店一路下一步，安装后显示需要重启<br>点重启即可</p><p>重启后切换回中国地区</p><h3 id="安装ADB">安装ADB</h3><span class='btn'><a class="button" href='https://dl.google.com/android/repository/platform-tools_r33.0.0-windows.zip' title='下载ABD'><i class='fas fa-download'></i>下载ABD</a></span><p>解压到任意地方<br>然后在地址栏输入<code>cmd</code> 回车<br><img src="https://bu.dusays.com/2022/03/17/a1bc42b081b95.png" alt="https://bu.dusays.com/2022/03/17/a1bc42b081b95.png"><br>打开<code>适用于Android™ 的Windows 子系统设置 </code><br><img src="https://bu.dusays.com/2022/03/17/5ad514c392a3a.png" alt="https://bu.dusays.com/2022/03/17/5ad514c392a3a.png"><br>打开开发者模式<br><img src="https://bu.dusays.com/2022/03/17/351815faeff80.png" alt="https://bu.dusays.com/2022/03/17/351815faeff80.png"><br>记下画横线的部分<br>在cmd里输入<code>adb connect</code>+空格+你刚才记下的，横线的那部分<br>回车，重复输入直到出现<code>already connected...</code></p><h3 id="安装安卓应用">安装安卓应用</h3><p>然后输入<code>adb install</code>+空格+APK路径，回车等待出现<code>Success</code><br>在开始中打开即可看到软件</p><h4 id="提示">提示</h4><p>部分软件可能会这样</p><p><img src="https://bu.dusays.com/2022/03/17/46ba4eb140edd.png" alt="https://bu.dusays.com/2022/03/17/46ba4eb140edd.png"></p><h3 id="报错">报错</h3><p>如出现不支持虚拟化，则需要开启 VT 并关闭其他虚拟软件！重启即可</p><h3 id="福利壁纸">福利壁纸</h3><p><img src="https://bu.dusays.com/2022/03/19/72b519011d458.jpg" alt="https://bu.dusays.com/2022/03/19/72b519011d458.jpg" title="来自 P站 "></p>]]></content>
     
@@ -403,7 +403,7 @@
     <link href="https://www.yt-blog.top/20211216/0000/%E4%B8%93%E6%B3%A8%E5%8A%A9%E6%89%8B/"/>
     <id>https://www.yt-blog.top/20211216/0000/%E4%B8%93%E6%B3%A8%E5%8A%A9%E6%89%8B/</id>
     <published>2021-12-16T00:00:00.000Z</published>
-    <updated>2023-03-23T15:22:52.350Z</updated>
+    <updated>2023-04-07T15:36:28.687Z</updated>
     
     <content type="html"><![CDATA[<p>专注助手：<br><a href="https://player.codemao.cn/new/116107000">手机点我</a></p><iframe src="https://player.codemao.cn/new/116107000" height="600" frameborder="no" border="0" width="100%"> </iframe>]]></content>
     
@@ -491,7 +491,7 @@
     <link href="https://www.yt-blog.top/20211111/1612/%E6%88%91%E5%81%9A%E4%BA%86%E4%B8%AA%E9%9F%B3%E6%95%88%E5%8C%85/"/>
     <id>https://www.yt-blog.top/20211111/1612/%E6%88%91%E5%81%9A%E4%BA%86%E4%B8%AA%E9%9F%B3%E6%95%88%E5%8C%85/</id>
     <published>2021-11-11T16:12:00.000Z</published>
-    <updated>2023-03-23T15:22:52.350Z</updated>
+    <updated>2023-04-07T15:36:28.687Z</updated>
     
     <content type="html"><![CDATA[<p>我下午闲着没事就做了个音效包，大家去体验一下吧！<br>打开qq音乐<br>音效&gt;音效制作&gt;导入<br>导入里面的qmaep文件<br><a href="https://download.yt-blog.top/2021/11/11/%E9%9F%B3%E6%95%88%E5%8C%85/%E6%B2%89%E6%B5%B8.zip">下载（沉浸音效）</a></p>]]></content>
     
@@ -546,7 +546,7 @@ node.js:&lt;/p&gt;
     <link href="https://www.yt-blog.top/20211103/2315/%E7%BB%83%E7%AC%94/"/>
     <id>https://www.yt-blog.top/20211103/2315/%E7%BB%83%E7%AC%94/</id>
     <published>2021-11-03T23:15:05.000Z</published>
-    <updated>2023-03-23T15:22:52.350Z</updated>
+    <updated>2023-04-07T15:36:28.687Z</updated>
     
     <content type="html"><![CDATA[<ol><li></li></ol><p>老师批评的声音惊天动地，叽里呱啦，让人不得不紧张到手心出汗，那话语如同子弹一般，劈天盖地射向我们，班里有了些火药味。眼前好像有一只母老虎，咆哮个不停，我们只能默默地听着。<br>2.<br>老师关切的声音如阳光温暖，轻轻地抚摸着我，让我的心舒服了许多，心中的阴霾也被这个声音吹散，像极了春风，把云吹过，把太阳吹回来，让大地充满生机，我的心情逐渐好转！</p>]]></content>
     
