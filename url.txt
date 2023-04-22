@@ -1,7 +1,8 @@
 https://www.yt-blog.top/sw.js
-https://www.yt-blog.top/categories/index.html
 https://www.yt-blog.top/tags/index.html
+https://www.yt-blog.top/ua/links/index.html
 https://www.yt-blog.top/404.html
+https://www.yt-blog.top/categories/index.html
 https://www.yt-blog.top/57865/
 https://www.yt-blog.top/47626/
 https://www.yt-blog.top/64234/
@@ -30,7 +31,6 @@ https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6
 https://www.yt-blog.top/docs/simplest-server/http/index.html
 https://www.yt-blog.top/docs/simplest-server/start/index.html
 https://www.yt-blog.top/rsa/index.html
-https://www.yt-blog.top/ua/links/index.html
 https://www.yt-blog.top/docs/index.html
 https://www.yt-blog.top/docs/simplest-server/index.html
 https://www.yt-blog.top/58785/
