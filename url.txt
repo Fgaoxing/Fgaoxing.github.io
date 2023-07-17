@@ -1,8 +1,9 @@
 https://www.yt-blog.top/sw.js
-https://www.yt-blog.top/categories/index.html
 https://www.yt-blog.top/friends/index.html
 https://www.yt-blog.top/tags/index.html
 https://www.yt-blog.top/ua/links/index.html
+https://www.yt-blog.top/404.html
+https://www.yt-blog.top/categories/index.html
 https://www.yt-blog.top/57865/
 https://www.yt-blog.top/47626/
 https://www.yt-blog.top/26824/
@@ -18,7 +19,6 @@ https://www.yt-blog.top/49152/
 https://www.yt-blog.top/20211111/1612/%E6%88%91%E5%81%9A%E4%BA%86%E4%B8%AA%E9%9F%B3%E6%95%88%E5%8C%85/
 https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6%8A%E7%A6%BB%E8%B0%B1%E8%B6%8A%E5%A5%BD/
 https://www.yt-blog.top/20211103/2315/%E7%BB%83%E7%AC%94/
-https://www.yt-blog.top/404.html
 https://www.yt-blog.top/%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0/index.html
 https://www.yt-blog.top/20211114/1212/%E8%87%AA%E5%BB%BA%E4%B8%8B%E8%BD%BD%E5%BA%93/
 https://www.yt-blog.top/20211230/1023/%E5%86%8D%E8%A7%812021-%E4%BD%A0%E5%A5%BD2022/
