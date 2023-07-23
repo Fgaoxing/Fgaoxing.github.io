@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yt-blog.top/ua/links/index.html</loc>
+    
+    <lastmod>2023-07-23</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yt-blog.top/57865/</loc>
     
     <lastmod>2023-07-23</lastmod>
@@ -39,15 +48,6 @@
   
   <url>
     <loc>https://www.yt-blog.top/52329/</loc>
-    
-    <lastmod>2023-07-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/OTB/</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -165,15 +165,6 @@
   
   <url>
     <loc>https://www.yt-blog.top/tags/index.html</loc>
-    
-    <lastmod>2023-07-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/ua/links/index.html</loc>
     
     <lastmod>2023-07-23</lastmod>
     
@@ -412,13 +403,6 @@
   
   <url>
     <loc>https://www.yt-blog.top/tags/OpenAI/</loc>
-    <lastmod>2023-07-23</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/tags/%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2023-07-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
