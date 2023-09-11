@@ -2,34 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.yt-blog.top/categories/index.html</loc>
-    
-    <lastmod>2023-09-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/tags/index.html</loc>
-    
-    <lastmod>2023-09-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/ua/links/index.html</loc>
-    
-    <lastmod>2023-09-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/47626/</loc>
     
     <lastmod>2023-09-11</lastmod>
     
@@ -147,6 +120,33 @@
   
   <url>
     <loc>https://www.yt-blog.top/20211103/2315/%E7%BB%83%E7%AC%94/</loc>
+    
+    <lastmod>2023-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/categories/index.html</loc>
+    
+    <lastmod>2023-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/index.html</loc>
+    
+    <lastmod>2023-09-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/47626/</loc>
     
     <lastmod>2023-09-11</lastmod>
     
