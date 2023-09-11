@@ -15,6 +15,7 @@ https://www.yt-blog.top/49152/
 https://www.yt-blog.top/20211111/1612/%E6%88%91%E5%81%9A%E4%BA%86%E4%B8%AA%E9%9F%B3%E6%95%88%E5%8C%85/
 https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6%8A%E7%A6%BB%E8%B0%B1%E8%B6%8A%E5%A5%BD/
 https://www.yt-blog.top/20211103/2315/%E7%BB%83%E7%AC%94/
+https://www.yt-blog.top/20211108/0834/hexo%E5%AE%89%E8%A3%85/
 https://www.yt-blog.top/52329/
 https://www.yt-blog.top/47626/
 https://www.yt-blog.top/57865/
@@ -26,7 +27,6 @@ https://www.yt-blog.top/about/index.html
 https://www.yt-blog.top/timeline/index.html
 https://www.yt-blog.top/20220430/1609/tool-js/
 https://www.yt-blog.top/20211012/0939/%E5%9B%BD%E5%BA%86/
-https://www.yt-blog.top/20211108/0834/hexo%E5%AE%89%E8%A3%85/
 https://www.yt-blog.top/20211213/1223/%E5%85%83%E5%AE%87%E5%AE%99/
 https://www.yt-blog.top/20220329/0000/%E8%99%9A%E6%8B%9F%E7%9A%84%E6%88%91/
 https://www.yt-blog.top/docs/simplest-server/http/index.html
