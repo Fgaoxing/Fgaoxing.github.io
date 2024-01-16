@@ -6,7 +6,7 @@
   <link href="https://www.yt-blog.top/atom.xml" rel="self"/>
   
   <link href="https://www.yt-blog.top/"/>
-  <updated>2023-12-23T07:01:57.762Z</updated>
+  <updated>2024-01-16T12:20:16.922Z</updated>
   <id>https://www.yt-blog.top/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网站优化小窍门</title>
+    <link href="https://www.yt-blog.top/3705/"/>
+    <id>https://www.yt-blog.top/3705/</id>
+    <published>2024-01-16T12:19:56.050Z</published>
+    <updated>2024-01-16T12:20:16.922Z</updated>
+    
+    <content type="html"><![CDATA[<p>首先呢，我发表一下我自己的观点：<br>速度优化有很多方面，并不一定说非得上SW</p><hr><h2 id="服务器">服务器</h2><h3 id="虚拟机-虚拟空间">虚拟机/虚拟空间</h3><p>这里只说GFW外的，GFW内的话基本也用不上<br>首先就是CDN，尤其是中国以外，尽量套一个，有的人可能套了，但是还没开缓存，那一点意义没有，甚至更慢<br>所以一定要为静态内容（或者伪静态）配置合理的缓存</p><h3 id="部署平台">部署平台</h3><p>对于一些部署平台，我这里只有Vercel的优化经验<br>其他的平台可以参照<br>首先你要清楚一点：部署平台，基本上都不是单台服务器<br>那这样就好办——测速<br>然后看哪个服务器究竟在哪，一个运营商，哪一个城市哪一条线路快<br>接下来使用DNS的分区域解析，挨个解析就可以了<br>比如我这里的Vercel效果：vercel.cdn.yt-blog.top(随便用，CNAME解析一些就行了)<br>（这个月为了优化网站，我已经测速消耗了200MB的流量，勉强达到国内付费CDN的程度，数据来源：<a href="https://zhale.me/http">炸了么</a>）<br><img src="https://bu.dusays.com/2024/01/16/65a6740fc36ea.png" alt=""></p><h2 id="网页">网页</h2><p>说完了服务器，接下来就是网页本身。首先就是尽量让网页体积更小<br>将字体JS CSS之类的各种文件都独立托管于网页本身<br>这样也可以带来更好的速度，尤其是使用免费的资源，还能节省流量</p>]]></content>
+    
+    
+    <summary type="html">首先呢，我发表一下我自己的观点： 速度优化有很多方面，并不一定说非得上SW  服务器 虚拟机/虚拟空间 这里只说GFW外的，GFW内的话基本也用不上 首先就是CDN，尤其是中国以外，尽量套一个，有的人可能套了，但是还没开缓存，那一点意义没有，甚至更慢 所以一定要为静态内容（或者伪静态）配置合理的缓存 部署平台 对于一些部署平台，我这里只有Vercel的优化经验 其他的平台可以参照 首先你要清楚一点...</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>【显微镜下的世界】0x1</title>
@@ -44,7 +61,7 @@
     <link href="https://www.yt-blog.top/26824/"/>
     <id>https://www.yt-blog.top/26824/</id>
     <published>2023-05-25T13:17:04.854Z</published>
-    <updated>2024-01-14T03:06:11.935Z</updated>
+    <updated>2024-01-16T12:20:35.207Z</updated>
     
     <content type="html"><![CDATA[<p>爱写CDN的我，又写了个新的CDN，CDNN系列再添一员，目前刚上线，不是很稳定，见谅。可以加群了解详情115967669，网站：<a href="https://cdn2.chuqis.com/">https://cdn2.chuqis.com/</a> ，和初七公司合作的【不是广告】<br>目前单文件最大30M，以后会开放付费的50M和100M，自己的回源，不依赖JSD</p>]]></content>
     
@@ -151,7 +168,7 @@
     <link href="https://www.yt-blog.top/51672/"/>
     <id>https://www.yt-blog.top/51672/</id>
     <published>2023-01-10T10:24:59.000Z</published>
-    <updated>2024-01-14T03:06:11.935Z</updated>
+    <updated>2024-01-16T12:20:35.207Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前情">前情</h2><p>给各位道个歉，好久没更新了</p><p>给大家带来一个好东西</p><p>众所周知，我会node.js</p><p>但是把，我一开始就选择了http库（就是原生库）</p><p>所以用express就会不太顺手</p><p>但是原生的http又没啥东西，就很难受几乎什么都要自己写，包括cookie的操作</p><p>所以我就基于原生的http包写了一个框架，使用路由的方式，可以使用无服务器函数</p><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/simplest-server/simplest-server"><img src="https://github-readme-stats.xaoxuu.com//api/pin/?username=simplest-server&repo=simplest-server&show_owner=true"/></a><p><a href="https://github.com/simplest-server/simplest-server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="#007ec6"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">GitHub</text><text x="915" y="140" transform="scale(.1)" fill="#fff" textLength="850">simplest-server</text></g></svg></a><br><a href="https://www.npmjs.com/package/simplest-server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="#e05d44"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">NPM</text><text x="915" y="140" transform="scale(.1)" fill="#fff" textLength="850">simplest-server</text></g></svg></a><br><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="green"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">LGPL</text><text x="915" y="140" transform="scale(.1)" fill="#fff">License</text></g></svg></p><h2 id="有关包的一些东西">有关包的一些东西</h2><p>目前由JS编写使用CJS引入，后续可能会迁移到Ts</p><p>这个NPM包目前是测试版，但基础功能已经OK了</p><p>你可以这样引入</p><pre><code class="highlight js"><span class="keyword">const</span> ss = <span class="built_in">require</span>(<span class="string">&#x27;simplest-server&#x27;</span>);</code></pre><p>目前包含如下函数</p><pre><code class="highlight js"><span class="keyword">const</span> ss = <span class="built_in">require</span>(<span class="string">&#x27;simplest-server&#x27;</span>);ss.<span class="property">http</span> # http服务ss.<span class="property">maps</span> # 本地文件映射ss.<span class="property">map</span> # 本地文件映射ss.<span class="property">ejs</span> # 集成的<span class="variable constant_">EJS</span>ss.<span class="property">err</span> # 返回报错页面</code></pre><p>更多文档看<a href="https://www.yt-blog.top/docs/simplest-server/">Simplest Server 文档</a>（大概率没写完，所以只能等）</p><h3 id="关于https">关于https</h3><p>目前不支持，后续加入</p>]]></content>
     
@@ -211,7 +228,7 @@
     <link href="https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6%8A%E7%A6%BB%E8%B0%B1%E8%B6%8A%E5%A5%BD/"/>
     <id>https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6%8A%E7%A6%BB%E8%B0%B1%E8%B6%8A%E5%A5%BD/</id>
     <published>2022-07-27T22:44:53.000Z</published>
-    <updated>2024-01-14T03:06:11.935Z</updated>
+    <updated>2024-01-16T12:20:35.207Z</updated>
     
     <content type="html"><![CDATA[<!-- 本文是[吹神求杀](https://chuishen.cf/)的QQ聊天截屏--><!--用时1小时15分--><!--![img](https://unpkg.com/ytblogimg/1668250571787.png)--><!--![img](https://unpkg.com/ytblogimg/1668250589674.webp)--><blockquote><p>文章被删除了！</p></blockquote><style>.ai-summary{display: none;}</style>]]></content>
     
@@ -320,7 +337,7 @@
     <link href="https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/"/>
     <id>https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/</id>
     <published>2022-04-06T00:00:00.000Z</published>
-    <updated>2024-01-14T03:06:11.935Z</updated>
+    <updated>2024-01-16T12:20:35.207Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://bu.dusays.com/2022/04/06/13cfa5c2f39aa.png" width="100px" height="100px"></img></p><h2 id="前言">前言</h2><p>学校要求上网课开摄像头，关键是前后各一个，我就只有有一个设备所以就要这样</p><h2 id="需求">需求</h2><blockquote><p>Win电脑</p></blockquote><h2 id="方法">方法</h2><h3 id="OBS">OBS</h3><p><a href="https://obsproject.com/zh-cn/download">下载 | OBS</a><br><a href="https://obsproject.com/forum/resources/obs-virtualcam.949/">下载OBS Virtualcam插件</a><br>选择1/4个摄像头<br>打开OBS</p><p><img src="https://bu.dusays.com/2022/04/06/154492e6089f3.png" alt="https://bu.dusays.com/2022/04/06/154492e6089f3.png"><br>左右摆放<br><img src="https://bu.dusays.com/2022/04/06/cdcf1c6dec957.png" alt="cdcf1c6dec957.png (1982×1120) (dusays.com)"><br>然后选择这个摄像头<br><img src="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" alt="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png"></p><h2 id="注意">注意</h2><p>使用时请保证电脑性能，且电脑摄像头没有占用。</p><blockquote><p>本教程仅支持Windows，这是OBS Virtualcam的原因。</p></blockquote>]]></content>
     
@@ -426,7 +443,7 @@
     <link href="https://www.yt-blog.top/20211216/0000/%E4%B8%93%E6%B3%A8%E5%8A%A9%E6%89%8B/"/>
     <id>https://www.yt-blog.top/20211216/0000/%E4%B8%93%E6%B3%A8%E5%8A%A9%E6%89%8B/</id>
     <published>2021-12-16T00:00:00.000Z</published>
-    <updated>2024-01-14T03:06:11.935Z</updated>
+    <updated>2024-01-16T12:20:35.207Z</updated>
     
     <content type="html"><![CDATA[<p>专注助手：<br><a href="https://player.codemao.cn/new/116107000">手机点我</a></p><iframe src="https://player.codemao.cn/new/116107000" height="600" frameborder="no" border="0" width="100%"> </iframe>]]></content>
     
@@ -465,42 +482,6 @@
     <category term="元宇宙" scheme="https://www.yt-blog.top/tags/%E5%85%83%E5%AE%87%E5%AE%99/"/>
     
     <category term="观点" scheme="https://www.yt-blog.top/tags/%E8%A7%82%E7%82%B9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>自建下载库</title>
-    <link href="https://www.yt-blog.top/20211114/1212/%E8%87%AA%E5%BB%BA%E4%B8%8B%E8%BD%BD%E5%BA%93/"/>
-    <id>https://www.yt-blog.top/20211114/1212/%E8%87%AA%E5%BB%BA%E4%B8%8B%E8%BD%BD%E5%BA%93/</id>
-    <published>2021-11-14T12:12:00.000Z</published>
-    <updated>2023-03-12T13:23:33.000Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="说说啥是自建下载">说说啥是自建下载</h2><p>就是自己有下载库</p><h2 id="为啥要自建下载库">为啥要自建下载库</h2><p>Github在中国访问慢，下载不方便</p><h2 id="好处">好处</h2><p>·方便<br>·下载快<br>·支持文件夹</p><h2 id="文档">文档</h2><a href="vercel::https://vercel.com/new::https://assets.vercel.com/image/upload/q_auto/front/zeit/twitter-card.png" title="" target=""></a><p>新建项目，绑二级域名一定是download（要符合协议，保证文件共享顺畅），<br>下载项目：</p><a href="%E6%9C%AC%E7%AB%99%E4%B8%8B%E8%BD%BD::https://download.yt-blog.top/2021/11/13/%E4%B8%8B%E8%BD%BD%E5%BA%93.zip::https://unpkg.com/ytblogimg/webp/logo.webp" title="" target=""></a><a href="gitee::https://gitee.com/yt_blog/self-built-download-library/tree/master::https://gitee.com/static/errors/favicon.ico" title="" target=""></a><p>下载python:</p><a href="%E6%9C%AC%E7%AB%99%E4%B8%8B%E8%BD%BD::https://download.yt-blog.top/2021/11/13/py3.10.0.exe::https://unpkg.com/ytblogimg/webp/logo.webp" title="" target=""></a><h2 id="提示">提示</h2><p>只支持win，mac不支持<br>开发不易请打赏<br>如果你使用了请在评论发‘我用了’，我会后期维护的</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;说说啥是自建下载&quot;&gt;说说啥是自建下载&lt;/h2&gt;
-&lt;p&gt;就是自己有下载库&lt;/p&gt;
-&lt;h2 id=&quot;为啥要自建下载库&quot;&gt;为啥要自建下载库&lt;/h2&gt;
-&lt;p&gt;Github在中国访问慢，下载不方便&lt;/p&gt;
-&lt;h2 id=&quot;好处&quot;&gt;好处&lt;/h2&gt;
-&lt;p&gt;·方便&lt;br&gt;
-·下载</summary>
-      
-    
-    
-    
-    <category term="技术" scheme="https://www.yt-blog.top/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-    <category term="python" scheme="https://www.yt-blog.top/tags/python/"/>
-    
-    <category term="博客" scheme="https://www.yt-blog.top/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-    <category term="自学" scheme="https://www.yt-blog.top/tags/%E8%87%AA%E5%AD%A6/"/>
-    
-    <category term="自建下载" scheme="https://www.yt-blog.top/tags/%E8%87%AA%E5%BB%BA%E4%B8%8B%E8%BD%BD/"/>
     
   </entry>
   
