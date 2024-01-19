@@ -57,6 +57,29 @@
   </entry>
   
   <entry>
+    <title>Hexo优化教程</title>
+    <link href="https://www.yt-blog.top/46463/"/>
+    <id>https://www.yt-blog.top/46463/</id>
+    <published>2023-07-17T23:48:24.239Z</published>
+    <updated>2024-01-19T01:17:24.994Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>本文章将从部署速度和访问速度两方面说说如何优化Hexo博客</p></blockquote><h2 id="部署速度">部署速度</h2><p>我们可看到Hexo的官网上告诉我们Hexo的生成速度还是很快的</p><p><img src="https://npm.elemecdn.com/ytblogimg/5e4545888b77352d759bb8e4c20259bf.png" alt="https://npm.elemecdn.com/ytblogimg/5e4545888b77352d759bb8e4c20259bf.png"></p><p>那为啥需要那么长时间呢，我们看看部署的流程</p><ol><li>从NPM安装包</li><li>运行Hexo生成指令</li><li>glup压缩（可选）</li></ol><p>这个流程每次都要运行一遍，非常耗时，如何优化呢</p><h3 id="NPM安装加速">NPM安装加速</h3><p>首先确定服务器位置，Github服务器在美国，所以呢只能使用NPM获取优化不了</p><p>但是Vercel可以选择节点位置，方法如下：</p><p>打开一个项目</p><p><img src="https://npm.elemecdn.com/ytblogimg/377239b28a4f1f4151ff826eb696e057.png" alt="https://npm.elemecdn.com/ytblogimg/377239b28a4f1f4151ff826eb696e057.png"></p><p>点击设置<br><img src="https://npm.elemecdn.com/ytblogimg/f796110a9f2b0fb8a96c069b11d877ee.png" alt="https://npm.elemecdn.com/ytblogimg/f796110a9f2b0fb8a96c069b11d877ee.png">然后按图中的配置<br><img src="https://npm.elemecdn.com/ytblogimg/f03b06eb870514a1ea597f9b588cd639.png" alt="https://npm.elemecdn.com/ytblogimg/f03b06eb870514a1ea597f9b588cd639.png"></p><p>然后就可以使用NPM镜像了，实测阿里镜像最快</p><p><img src="https://npm.elemecdn.com/ytblogimg/b53d09b87284846842341a9806630c77.png" alt="https://npm.elemecdn.com/ytblogimg/b53d09b87284846842341a9806630c77.png"></p><p>部署的时间可以压缩最少10秒</p><h3 id="Hexo生成加速">Hexo生成加速</h3><p>首先就是减少文件数量，能删就删</p>]]></content>
+    
+    
+    <summary type="html"> 本文章将从部署速度和访问速度两方面说说如何优化Hexo博客  部署速度 我们可看到Hexo的官网上告诉我们Hexo的生成速度还是很快的  那为啥需要那么长时间呢，我们看看部署的流程  从NPM安装包 运行Hexo生成指令 glup压缩（可选）  这个流程每次都要运行一遍，非常耗时，如何优化呢 NPM安装加速 首先确定服务器位置，Github服务器在美国，所以呢只能使用NPM获取优化不了 但是Ve...</summary>
+    
+    
+    
+    <category term="技术" scheme="https://www.yt-blog.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="Hexo" scheme="https://www.yt-blog.top/tags/Hexo/"/>
+    
+    <category term="网站优化" scheme="https://www.yt-blog.top/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
     <title>【CDNN】CDNN再添一员</title>
     <link href="https://www.yt-blog.top/26824/"/>
     <id>https://www.yt-blog.top/26824/</id>
@@ -172,7 +195,7 @@
     <link href="https://www.yt-blog.top/51672/"/>
     <id>https://www.yt-blog.top/51672/</id>
     <published>2023-01-10T10:24:59.000Z</published>
-    <updated>2024-01-19T01:17:37.907Z</updated>
+    <updated>2024-01-19T01:17:36.239Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前情">前情</h2><p>给各位道个歉，好久没更新了</p><p>给大家带来一个好东西</p><p>众所周知，我会node.js</p><p>但是把，我一开始就选择了http库（就是原生库）</p><p>所以用express就会不太顺手</p><p>但是原生的http又没啥东西，就很难受几乎什么都要自己写，包括cookie的操作</p><p>所以我就基于原生的http包写了一个框架，使用路由的方式，可以使用无服务器函数</p><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/simplest-server/simplest-server"><img src="https://github-readme-stats.xaoxuu.com//api/pin/?username=simplest-server&repo=simplest-server&show_owner=true"/></a><p><a href="https://github.com/simplest-server/simplest-server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="#007ec6"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">GitHub</text><text x="915" y="140" transform="scale(.1)" fill="#fff" textLength="850">simplest-server</text></g></svg></a><br><a href="https://www.npmjs.com/package/simplest-server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="#e05d44"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">NPM</text><text x="915" y="140" transform="scale(.1)" fill="#fff" textLength="850">simplest-server</text></g></svg></a><br><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="green"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">LGPL</text><text x="915" y="140" transform="scale(.1)" fill="#fff">License</text></g></svg></p><h2 id="有关包的一些东西">有关包的一些东西</h2><p>目前由JS编写使用CJS引入，后续可能会迁移到Ts</p><p>这个NPM包目前是测试版，但基础功能已经OK了</p><p>你可以这样引入</p><pre><code class="highlight js"><span class="keyword">const</span> ss = <span class="built_in">require</span>(<span class="string">&#x27;simplest-server&#x27;</span>);</code></pre><p>目前包含如下函数</p><pre><code class="highlight js"><span class="keyword">const</span> ss = <span class="built_in">require</span>(<span class="string">&#x27;simplest-server&#x27;</span>);ss.<span class="property">http</span> # http服务ss.<span class="property">maps</span> # 本地文件映射ss.<span class="property">map</span> # 本地文件映射ss.<span class="property">ejs</span> # 集成的<span class="variable constant_">EJS</span>ss.<span class="property">err</span> # 返回报错页面</code></pre><p>更多文档看<a href="https://www.yt-blog.top/docs/simplest-server/">Simplest Server 文档</a>（大概率没写完，所以只能等）</p><h3 id="关于https">关于https</h3><p>目前不支持，后续加入</p>]]></content>
     
@@ -232,7 +255,7 @@
     <link href="https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6%8A%E7%A6%BB%E8%B0%B1%E8%B6%8A%E5%A5%BD/"/>
     <id>https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6%8A%E7%A6%BB%E8%B0%B1%E8%B6%8A%E5%A5%BD/</id>
     <published>2022-07-27T22:44:53.000Z</published>
-    <updated>2024-01-19T01:17:37.907Z</updated>
+    <updated>2024-01-19T01:17:36.239Z</updated>
     
     <content type="html"><![CDATA[<!-- 本文是[吹神求杀](https://chuishen.cf/)的QQ聊天截屏--><!--用时1小时15分--><!--![img](https://unpkg.com/ytblogimg/1668250571787.png)--><!--![img](https://unpkg.com/ytblogimg/1668250589674.webp)--><blockquote><p>文章被删除了！</p></blockquote><style>.ai-summary{display: none;}</style>]]></content>
     
@@ -341,7 +364,7 @@
     <link href="https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/"/>
     <id>https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/</id>
     <published>2022-04-06T00:00:00.000Z</published>
-    <updated>2024-01-19T01:17:37.907Z</updated>
+    <updated>2024-01-19T01:17:36.239Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://bu.dusays.com/2022/04/06/13cfa5c2f39aa.png" width="100px" height="100px"></img></p><h2 id="前言">前言</h2><p>学校要求上网课开摄像头，关键是前后各一个，我就只有有一个设备所以就要这样</p><h2 id="需求">需求</h2><blockquote><p>Win电脑</p></blockquote><h2 id="方法">方法</h2><h3 id="OBS">OBS</h3><p><a href="https://obsproject.com/zh-cn/download">下载 | OBS</a><br><a href="https://obsproject.com/forum/resources/obs-virtualcam.949/">下载OBS Virtualcam插件</a><br>选择1/4个摄像头<br>打开OBS</p><p><img src="https://bu.dusays.com/2022/04/06/154492e6089f3.png" alt="https://bu.dusays.com/2022/04/06/154492e6089f3.png"><br>左右摆放<br><img src="https://bu.dusays.com/2022/04/06/cdcf1c6dec957.png" alt="cdcf1c6dec957.png (1982×1120) (dusays.com)"><br>然后选择这个摄像头<br><img src="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" alt="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png"></p><h2 id="注意">注意</h2><p>使用时请保证电脑性能，且电脑摄像头没有占用。</p><blockquote><p>本教程仅支持Windows，这是OBS Virtualcam的原因。</p></blockquote>]]></content>
     
@@ -447,7 +470,7 @@
     <link href="https://www.yt-blog.top/20211216/0000/%E4%B8%93%E6%B3%A8%E5%8A%A9%E6%89%8B/"/>
     <id>https://www.yt-blog.top/20211216/0000/%E4%B8%93%E6%B3%A8%E5%8A%A9%E6%89%8B/</id>
     <published>2021-12-16T00:00:00.000Z</published>
-    <updated>2024-01-19T01:17:37.907Z</updated>
+    <updated>2024-01-19T01:17:36.239Z</updated>
     
     <content type="html"><![CDATA[<p>专注助手：<br><a href="https://player.codemao.cn/new/116107000">手机点我</a></p><iframe src="https://player.codemao.cn/new/116107000" height="600" frameborder="no" border="0" width="100%"> </iframe>]]></content>
     
@@ -461,31 +484,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>元宇宙</title>
-    <link href="https://www.yt-blog.top/20211213/1223/%E5%85%83%E5%AE%87%E5%AE%99/"/>
-    <id>https://www.yt-blog.top/20211213/1223/%E5%85%83%E5%AE%87%E5%AE%99/</id>
-    <published>2021-12-13T12:23:43.000Z</published>
-    <updated>2023-09-11T12:19:44.095Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="什么是元宇宙">什么是元宇宙</h2><p><strong>元宇宙</strong>  <em>（Metaverse）</em> 是利用科技手段进行链接与创造的，与现实世界映射与交互的虚拟世界，具备新型社会体系的数字生活空间。</p><p>它整合了多种新技术而产生的新型虚实相融的互联网应用和社会形态，它基于<a href="https://baike.baidu.com/item/%E6%89%A9%E5%B1%95%E7%8E%B0%E5%AE%9E/56042847">扩展现实</a>技术提供沉浸式体验，基于<a href="https://baike.baidu.com/item/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/22197545">数字孪生</a>技术生成现实世界的镜像，基于<a href="https://baike.baidu.com/item/%E5%8C%BA%E5%9D%97%E9%93%BE/13465666">区块链</a>技术搭建经济体系，将虚拟世界与现实世界在经济系统、社交系统、身份系统上密切融合，并且允许每个用户进行内容生产和世界编辑。</p><p><strong>元宇宙</strong>一词诞生于1992年的科幻小说《<a href="https://baike.baidu.com/item/%E9%9B%AA%E5%B4%A9/6877078">雪崩</a>》，小说描绘了一个庞大的虚拟现实世界，在这里，人们用数字化身来控制，并相互竞争以提高自己的地位，到现在看来，描述的还是超前的未来世界】 <strong>关于“元宇宙”，比较认可的思想源头是美国数学家和计算机专家</strong><a href="https://baike.baidu.com/item/%E5%BC%97%E8%AF%BA%C2%B7%E6%96%87%E5%A5%87/6978618">弗诺·文奇</a>教授，在其1981年出版的小说《真名实姓》中，创造性地构思了一个通过<a href="https://baike.baidu.com/item/%E8%84%91%E6%9C%BA%E6%8E%A5%E5%8F%A3/7864914">脑机接口</a>进入并获得感官体验的虚拟世界。</p><p><strong>元宇宙本质上是对现实世界的虚拟化、数字化过程，需要对内容生产、经济系统、用户体验以及实体世界内容等进行大量改造。但元宇宙的发展是循序渐进的，是在共享的基础设施、标准及协议的支撑下，由众多工具、平台不断融合、进化而最终成形。</strong></p><p>2021年12月，入选《柯林斯词典》2021年度热词 ；12月6日，入选“2021年度十大网络用语”。<strong>12月8日，入选《咬文嚼字》“2021年度十大流行语”。</strong><br>来源于 <a href="https://baike.baidu.com/item/%E5%85%83%E5%AE%87%E5%AE%99/58292530">百度</a></p><hr><h2 id="观点">观点</h2><h4 id="我有两个观点">我有两个观点</h4><h6 id="一·">一·</h6><p>我比较期待类似虚拟世界的，如脑机接口，VR，可以有很多造福人类的地方，如 让死人复活，让植物人苏醒等</p><hr><h6 id="二·">二·</h6><p>不太赞同，你进入虚拟世界，你的想法，记忆都会被读取，甚至是被篡改，毫无隐私，也无法管理</p><hr><p>以上是我的观点，如果你有神马观点，欢迎留言！<br>记得分享，收藏，最好有个打赏！✊<br><img src="https://cdn2.chuqis.com/gh/fgaoxing/myimg/webp/%E6%89%93%E8%B5%8F.webp" alt="img"></p>]]></content>
-    
-    
-    <summary type="html">什么是元宇宙 元宇宙  （Metaverse） 是利用科技手段进行链接与创造的，与现实世界映射与交互的虚拟世界，具备新型社会体系的数字生活空间。 它整合了多种新技术而产生的新型虚实相融的互联网应用和社会形态，它基于扩展现实技术提供沉浸式体验，基于数字孪生技术生成现实世界的镜像，基于区块链技术搭建经济体系，将虚拟世界与现实世界在经济系统、社交系统、身份系统上密切融合，并且允许每个用户进行内容生产和世...</summary>
-    
-    
-    
-    <category term="话题" scheme="https://www.yt-blog.top/categories/%E8%AF%9D%E9%A2%98/"/>
-    
-    
-    <category term="话题" scheme="https://www.yt-blog.top/tags/%E8%AF%9D%E9%A2%98/"/>
-    
-    <category term="元宇宙" scheme="https://www.yt-blog.top/tags/%E5%85%83%E5%AE%87%E5%AE%99/"/>
-    
-    <category term="观点" scheme="https://www.yt-blog.top/tags/%E8%A7%82%E7%82%B9/"/>
     
   </entry>
   
