@@ -1,13 +1,14 @@
+https://www.yt-blog.top/404.html
 https://www.yt-blog.top/sw.js
 https://www.yt-blog.top/categories/index.html
 https://www.yt-blog.top/tags/index.html
 https://www.yt-blog.top/ua/links/index.html
+https://www.yt-blog.top/51672/
 https://www.yt-blog.top/20211216/0000/%E4%B8%93%E6%B3%A8%E5%8A%A9%E6%89%8B/
 https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/
 https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6%8A%E7%A6%BB%E8%B0%B1%E8%B6%8A%E5%A5%BD/
 https://www.yt-blog.top/20211103/2315/%E7%BB%83%E7%AC%94/
-https://www.yt-blog.top/404.html
-https://www.yt-blog.top/51672/
+https://www.yt-blog.top/20220430/1609/tool-js/
 https://www.yt-blog.top/56637/
 https://www.yt-blog.top/9952/
 https://www.yt-blog.top/48618/
@@ -32,7 +33,6 @@ https://www.yt-blog.top/%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0/index.html
 https://www.yt-blog.top/20211230/1023/%E5%86%8D%E8%A7%812021-%E4%BD%A0%E5%A5%BD2022/
 https://www.yt-blog.top/about/index.html
 https://www.yt-blog.top/timeline/index.html
-https://www.yt-blog.top/20220430/1609/tool-js/
 https://www.yt-blog.top/20211012/0939/%E5%9B%BD%E5%BA%86/
 https://www.yt-blog.top/docs/simplest-server/http/index.html
 https://www.yt-blog.top/docs/simplest-server/start/index.html
