@@ -51,16 +51,6 @@
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
   </url> <url>
-    <loc>https://www.yt-blog.top/20220430/1609/tool-js/</loc>
-    
-     <mobile type="pc,mobile" />
-    
-    <lastmod>
-      2024-02-11
-    </lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url> <url>
     <loc>https://www.yt-blog.top//56637/</loc>
     
      <mobile type="pc,mobile" />
@@ -247,6 +237,16 @@
     
     <lastmod>
       2023-03-12
+    </lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url> <url>
+    <loc>https://www.yt-blog.top/20220430/1609/tool-js/</loc>
+    
+     <mobile type="pc,mobile" />
+    
+    <lastmod>
+      2023-02-19
     </lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
