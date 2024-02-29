@@ -2,12 +2,13 @@ https://www.yt-blog.top/sw.js
 https://www.yt-blog.top/categories/index.html
 https://www.yt-blog.top/tags/index.html
 https://www.yt-blog.top/ua/links/index.html
-https://www.yt-blog.top/404.html
 https://www.yt-blog.top/51672/
 https://www.yt-blog.top/20211216/0000/%E4%B8%93%E6%B3%A8%E5%8A%A9%E6%89%8B/
 https://www.yt-blog.top/20220406/0000/%E5%8F%8C%E6%91%84%E5%83%8F%E5%A4%B4/
 https://www.yt-blog.top/20220727/2244/%E6%94%BE%E5%BC%80%E6%83%B3%EF%BC%8C%E8%B6%8A%E7%A6%BB%E8%B0%B1%E8%B6%8A%E5%A5%BD/
 https://www.yt-blog.top/20211103/2315/%E7%BB%83%E7%AC%94/
+https://www.yt-blog.top/404.html
+https://www.yt-blog.top/57865/
 https://www.yt-blog.top/%E7%8B%82%E7%8A%AC%E7%97%85%E6%AF%92.html
 https://www.yt-blog.top/20220430/1609/tool-js/
 https://www.yt-blog.top/56637/
@@ -27,7 +28,6 @@ https://www.yt-blog.top/20220624/1936/cdnn%EF%BC%8Cjsdelivr%E7%9A%84%E4%BB%A3%E6
 https://www.yt-blog.top/20211213/1223/%E5%85%83%E5%AE%87%E5%AE%99/
 https://www.yt-blog.top/20211108/0834/hexo%E5%AE%89%E8%A3%85/
 https://www.yt-blog.top/47626/
-https://www.yt-blog.top/57865/
 https://www.yt-blog.top/friends/index.html
 https://www.yt-blog.top/%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0/index.html
 https://www.yt-blog.top/20211230/1023/%E5%86%8D%E8%A7%812021-%E4%BD%A0%E5%A5%BD2022/
