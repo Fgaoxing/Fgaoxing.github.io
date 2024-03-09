@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yt-blog.top/62238/</loc>
+    
+    <lastmod>2024-03-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yt-blog.top/tags/index.html</loc>
     
     <lastmod>2024-03-09</lastmod>
@@ -433,20 +442,6 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/tags/Hexo/</loc>
-    <lastmod>2024-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2024-03-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/tags/AI/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -469,6 +464,20 @@
   
   <url>
     <loc>https://www.yt-blog.top/tags/OpenAI/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/Hexo/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -709,6 +718,13 @@
   
   <url>
     <loc>https://www.yt-blog.top/categories/%E8%AF%9D%E9%A2%98/</loc>
+    <lastmod>2024-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/categories/%E5%85%AC%E5%91%8A/</loc>
     <lastmod>2024-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
