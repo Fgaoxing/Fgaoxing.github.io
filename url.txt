@@ -1,4 +1,3 @@
-https://www.yt-blog.top/404.html
 https://www.yt-blog.top/sw.js
 https://www.yt-blog.top/categories/index.html
 https://www.yt-blog.top/tags/index.html
@@ -8,6 +7,7 @@ https://www.yt-blog.top/20211216/0000/
 https://www.yt-blog.top/20220406/0000/
 https://www.yt-blog.top/20220727/2244/
 https://www.yt-blog.top/20211103/2315/
+https://www.yt-blog.top/404.html
 https://www.yt-blog.top/9952/
 https://www.yt-blog.top/64234/
 https://www.yt-blog.top/62238/
