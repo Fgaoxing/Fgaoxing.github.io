@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.yt-blog.top/tags/index.html</loc>
+    
+    <lastmod>2024-05-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/ua/links/index.html</loc>
+    
+    <lastmod>2024-05-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yt-blog.top/51672/</loc>
     
     <lastmod>2024-05-12</lastmod>
@@ -48,24 +66,6 @@
   
   <url>
     <loc>https://www.yt-blog.top/categories/index.html</loc>
-    
-    <lastmod>2024-05-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/tags/index.html</loc>
-    
-    <lastmod>2024-05-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/ua/links/index.html</loc>
     
     <lastmod>2024-05-12</lastmod>
     
@@ -645,14 +645,14 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/tags/QQ%E9%9F%B3%E4%B9%90/</loc>
+    <loc>https://www.yt-blog.top/tags/Vercel-CDN/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/tags/Vercel-CDN/</loc>
+    <loc>https://www.yt-blog.top/tags/QQ%E9%9F%B3%E4%B9%90/</loc>
     <lastmod>2024-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
