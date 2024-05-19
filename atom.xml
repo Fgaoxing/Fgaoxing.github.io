@@ -6,7 +6,7 @@
   <link href="https://www.yt-blog.top/atom.xml" rel="self"/>
   
   <link href="https://www.yt-blog.top/"/>
-  <updated>2024-03-09T06:18:38.480Z</updated>
+  <updated>2024-05-19T06:38:07.190Z</updated>
   <id>https://www.yt-blog.top/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【LSP】微型滚动动画库</title>
+    <link href="https://www.yt-blog.top/7383/"/>
+    <id>https://www.yt-blog.top/7383/</id>
+    <published>2024-05-19T06:33:41.505Z</published>
+    <updated>2024-05-19T06:38:07.190Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>为了给工作室写个新的官网，简洁还不能显得很Low，于是我写了这个</p></blockquote><h1 align="center">LightScrollPage</h1><p align="center">LightScrollPage(简称 “LSP”)，一个基于原生JS的微型滚动动画库，不需要依赖，只需要一个JS文件，源代码小于1KB</p><h2 id="如何使用"><a class="header-anchor" href="#如何使用">¶</a>如何使用</h2><h3 id="引入"><a class="header-anchor" href="#引入">¶</a>引入</h3><h4 id="CDN"><a class="header-anchor" href="#CDN">¶</a>CDN</h4><p>你可以使用支持Github回源的CDN</p><p>jsDelivr:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.com/gh/OblivionOcean/LightScrollPage@main/index.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><h4 id="自行部署"><a class="header-anchor" href="#自行部署">¶</a>自行部署</h4><p><a href="https://github.com/OblivionOcean/LightScrollPage/raw/main/index.min.js">点击下载文件</a></p><p>引入:</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;文件路径&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="使用"><a class="header-anchor" href="#使用">¶</a>使用</h3><p>LSP配置了JSDoc，你可以方便的用VSCode、IDEA等代码编辑器查看其使用方法</p><p><font color="#f00">注：</font><strong>每个页面的长度 = scroll-page总长度 / 页面数量</strong>，需要手动设置scroll-page总长度，一般使用vh单位</p><p><strong>文档中<em>长度</em>是显示此页面的范围，<em>高度</em>是页面div的高度，一般为100vh</strong></p><h4 id="自动操作"><a class="header-anchor" href="#自动操作">¶</a>自动操作</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;scroll-page&quot;</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 使用scroll-page作为Class名称！--&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 页面必须有page的Class --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;page&quot;</span>&gt;</span><span class="comment">&lt;!-- 页面1 --&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;page&quot;</span>&gt;</span><span class="comment">&lt;!-- 页面2 --&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>这种状态不能使用 <code>lsp.addEventListener</code>监听，如需监听请<a href="#%E6%89%8B%E5%8A%A8%E6%93%8D%E4%BD%9C">手动操作</a></p><h4 id="手动操作"><a class="header-anchor" href="#手动操作">¶</a>手动操作</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;scrollPage&quot;</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 不能使用scroll-page作为Class名称！--&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- 页面必须有page的Class --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;page&quot;</span>&gt;</span><span class="comment">&lt;!-- 页面1 --&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;page&quot;</span>&gt;</span><span class="comment">&lt;!-- 页面2 --&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> lsp = <span class="keyword">new</span> <span class="title class_">ScrollPage</span>(<span class="string">&quot;.scrollPage&quot;</span>);<span class="comment">// 初始化lsp对象, 需要传入目标的CSS选择器或者element对象</span></span><br><span class="line">lsp.<span class="title function_">addEventListener</span>(<span class="function">(<span class="params">event</span>) =&gt;</span> &#123;<span class="comment">// 创建监听事件</span></span><br><span class="line">    <span class="comment">// event对象</span></span><br><span class="line">    <span class="comment">// 在滚动动画范围内</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">      pageNum: 当前页码</span></span><br><span class="line"><span class="comment">      pageHeight: 当前页长度</span></span><br><span class="line"><span class="comment">      pageToTop: 当前页距离顶端（相对于页面长度）</span></span><br><span class="line"><span class="comment">      scrollPage: 当前页距离顶端（相对于整个动画盒子的长度）</span></span><br><span class="line"><span class="comment">      element: 动画盒子的元素对象</span></span><br><span class="line"><span class="comment">      page: 当前页的元素对象</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">    <span class="comment">// 超出范围时</span></span><br><span class="line">    <span class="comment">/*</span></span><br><span class="line"><span class="comment">      without: up/down 分别为从上端超出和从下端超出</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><h3 id="效果"><a class="header-anchor" href="#效果">¶</a>效果</h3><p><a href="https://www.oblivionocean.top/">完整效果</a></p>]]></content>
+    
+    
+    <summary type="html"> 为了给工作室写个新的官网，简洁还不能显得很Low，于是我写了这个  LightScrollPage LightScrollPage(简称 “LSP”)，一个基于原生JS的微型滚动动画库，不需要依赖，只需要一个JS文件，源代码小于1KB 如何使用 引入 CDN 你可以使用支持Github回源的CDN jsDelivr: &amp;lt;script src=&amp;quot;https://cdn.jsdeli...</summary>
+    
+    
+    
+    <category term="技术" scheme="https://www.yt-blog.top/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="JS" scheme="https://www.yt-blog.top/tags/JS/"/>
+    
+  </entry>
   
   <entry>
     <title>全平台账号公示</title>
@@ -237,7 +258,7 @@
     <link href="https://www.yt-blog.top/51672/"/>
     <id>https://www.yt-blog.top/51672/</id>
     <published>2023-01-10T02:24:59.000Z</published>
-    <updated>2024-05-18T14:16:58.138Z</updated>
+    <updated>2024-05-19T14:37:54.385Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前情"><a class="header-anchor" href="#前情">¶</a>前情</h2><p>给各位道个歉，好久没更新了</p><p>给大家带来一个好东西</p><p>众所周知，我会node.js</p><p>但是把，我一开始就选择了http库（就是原生库）</p><p>所以用express就会不太顺手</p><p>但是原生的http又没啥东西，就很难受几乎什么都要自己写，包括cookie的操作</p><p>所以我就基于原生的http包写了一个框架，使用路由的方式，可以使用无服务器函数</p><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/simplest-server/simplest-server"><img src="https://github-readme-stats.xaoxuu.com//api/pin/?username=simplest-server&repo=simplest-server&show_owner=true"/></a><p><a href="https://github.com/simplest-server/simplest-server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="#007ec6"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">GitHub</text><text x="915" y="140" transform="scale(.1)" fill="#fff" textLength="850">simplest-server</text></g></svg></a><br /><a href="https://www.npmjs.com/package/simplest-server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="#e05d44"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">NPM</text><text x="915" y="140" transform="scale(.1)" fill="#fff" textLength="850">simplest-server</text></g></svg></a><br /><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="green"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">LGPL</text><text x="915" y="140" transform="scale(.1)" fill="#fff">License</text></g></svg></p><h2 id="有关包的一些东西"><a class="header-anchor" href="#有关包的一些东西">¶</a>有关包的一些东西</h2><p>目前由JS编写使用CJS引入，后续可能会迁移到Ts</p><p>这个NPM包目前是测试版，但基础功能已经OK了</p><p>你可以这样引入</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ss = <span class="built_in">require</span>(<span class="string">&#x27;simplest-server&#x27;</span>);</span><br></pre></td></tr></table></figure><p>目前包含如下函数</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ss = <span class="built_in">require</span>(<span class="string">&#x27;simplest-server&#x27;</span>);</span><br><span class="line">ss.<span class="property">http</span> # http服务</span><br><span class="line">ss.<span class="property">maps</span> # 本地文件映射</span><br><span class="line">ss.<span class="property">map</span> # 本地文件映射</span><br><span class="line">ss.<span class="property">ejs</span> # 集成的<span class="variable constant_">EJS</span></span><br><span class="line">ss.<span class="property">err</span> # 返回报错页面</span><br></pre></td></tr></table></figure><p>更多文档看<a href="https://www.yt-blog.top/docs/simplest-server/">Simplest Server 文档</a>（大概率没写完，所以只能等）</p><h3 id="关于https"><a class="header-anchor" href="#关于https">¶</a>关于https</h3><p>目前不支持，后续加入</p>]]></content>
     
@@ -293,7 +314,7 @@
     <link href="https://www.yt-blog.top/20220727/1444/"/>
     <id>https://www.yt-blog.top/20220727/1444/</id>
     <published>2022-07-27T14:44:53.000Z</published>
-    <updated>2024-05-18T14:16:58.142Z</updated>
+    <updated>2024-05-19T14:37:54.385Z</updated>
     
     <content type="html"><![CDATA[<!-- 本文是[吹神求杀](https://chuishen.cf/)的QQ聊天截屏--><!--用时1小时15分--><!--![img](https://unpkg.com/ytblogimg/1668250571787.png)--><!--![img](https://unpkg.com/ytblogimg/1668250589674.webp)--><blockquote><p>文章被删除了！</p></blockquote><style>.ai-summary{display: none;}</style>]]></content>
     
@@ -400,7 +421,7 @@
     <link href="https://www.yt-blog.top/20220405/1600/"/>
     <id>https://www.yt-blog.top/20220405/1600/</id>
     <published>2022-04-05T16:00:00.000Z</published>
-    <updated>2024-05-18T14:16:58.142Z</updated>
+    <updated>2024-05-19T14:37:54.385Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://bu.dusays.com/2022/04/06/13cfa5c2f39aa.png" width="100px" height="100px"></img></p><h2 id="前言"><a class="header-anchor" href="#前言">¶</a>前言</h2><p>学校要求上网课开摄像头，关键是前后各一个，我就只有有一个设备所以就要这样</p><h2 id="需求"><a class="header-anchor" href="#需求">¶</a>需求</h2><blockquote><p>Win电脑</p></blockquote><h2 id="方法"><a class="header-anchor" href="#方法">¶</a>方法</h2><h3 id="OBS"><a class="header-anchor" href="#OBS">¶</a>OBS</h3><p><a href="https://obsproject.com/zh-cn/download">下载 | OBS</a><br /><a href="https://obsproject.com/forum/resources/obs-virtualcam.949/">下载OBS Virtualcam插件</a><br />选择1/4个摄像头<br />打开OBS</p><p><img src="https://bu.dusays.com/2022/04/06/154492e6089f3.png" alt="https://bu.dusays.com/2022/04/06/154492e6089f3.png" /><br />左右摆放<br /><img src="https://bu.dusays.com/2022/04/06/cdcf1c6dec957.png" alt="cdcf1c6dec957.png (1982×1120) (dusays.com)" /><br />然后选择这个摄像头<br /><img src="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" alt="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" /></p><h2 id="注意"><a class="header-anchor" href="#注意">¶</a>注意</h2><p>使用时请保证电脑性能，且电脑摄像头没有占用。</p><blockquote><p>本教程仅支持Windows，这是OBS Virtualcam的原因。</p></blockquote>]]></content>
     
@@ -446,29 +467,6 @@
     <category term="虚拟" scheme="https://www.yt-blog.top/tags/%E8%99%9A%E6%8B%9F/"/>
     
     <category term="OBS" scheme="https://www.yt-blog.top/tags/OBS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Win11正式版安装安卓软件(不需要第三方虚拟机)</title>
-    <link href="https://www.yt-blog.top/48618/"/>
-    <id>https://www.yt-blog.top/48618/</id>
-    <published>2022-03-17T00:17:00.000Z</published>
-    <updated>2024-01-18T17:41:24.044Z</updated>
-    
-    <content type="html"><![CDATA[<h3 id="准备工具"><a class="header-anchor" href="#准备工具">¶</a>准备工具</h3><blockquote><ol><li>Win11电脑一台</li><li>一双手</li></ol></blockquote><h3 id="安装安卓"><a class="header-anchor" href="#安装安卓">¶</a>安装安卓</h3><p>首先我们先打开设置<br />时间和地区&gt;语言和区域</p><p><img src="https://bu.dusays.com/2022/03/17/e7953f402f157.png" alt="https://bu.dusays.com/2022/03/17/e7953f402f157.png" /><br />黄色区域调整成美国<br />然后下载安卓</p><span class='btn'><a class="button" href='https://apps.microsoft.com/detail/9P3395VX91NR?hl=zh-cn&gl=US' title='下载安卓'><i class='fas fa-download'></i>下载安卓</a></span><p>点击GET，跳转到应用商店一路下一步，安装后显示需要重启<br />点重启即可</p><p>重启后切换回中国地区</p><h3 id="安装ADB"><a class="header-anchor" href="#安装ADB">¶</a>安装ADB</h3><span class='btn'><a class="button" href='https://dl.google.com/android/repository/platform-tools_r33.0.0-windows.zip' title='下载ABD'><i class='fas fa-download'></i>下载ABD</a></span><p>解压到任意地方<br />然后在地址栏输入 <code>cmd</code> 回车<br /><img src="https://bu.dusays.com/2022/03/17/a1bc42b081b95.png" alt="https://bu.dusays.com/2022/03/17/a1bc42b081b95.png" /><br />打开 <code>适用于Android™ 的Windows 子系统设置 </code><br /><img src="https://bu.dusays.com/2022/03/17/5ad514c392a3a.png" alt="https://bu.dusays.com/2022/03/17/5ad514c392a3a.png" /><br />打开开发者模式<br /><img src="https://bu.dusays.com/2022/03/17/351815faeff80.png" alt="https://bu.dusays.com/2022/03/17/351815faeff80.png" /><br />记下画横线的部分<br />在cmd里输入 <code>adb connect</code>+空格+你刚才记下的，横线的那部分<br />回车，重复输入直到出现 <code>already connected...</code></p><h3 id="安装安卓应用"><a class="header-anchor" href="#安装安卓应用">¶</a>安装安卓应用</h3><p>然后输入 <code>adb install</code>+空格+APK路径，回车等待出现 <code>Success</code><br />在开始中打开即可看到软件</p><h4 id="提示"><a class="header-anchor" href="#提示">¶</a>提示</h4><p>部分软件可能会这样</p><p><img src="https://bu.dusays.com/2022/03/17/46ba4eb140edd.png" alt="https://bu.dusays.com/2022/03/17/46ba4eb140edd.png" /></p><h3 id="报错"><a class="header-anchor" href="#报错">¶</a>报错</h3><p>如出现不支持虚拟化，则需要开启 VT 并关闭其他虚拟软件！重启即可</p><h3 id="福利壁纸"><a class="header-anchor" href="#福利壁纸">¶</a>福利壁纸</h3><p><img src="https://bu.dusays.com/2022/03/19/72b519011d458.jpg" alt="https://bu.dusays.com/2022/03/19/72b519011d458.jpg" title="来自 P站 " /></p>]]></content>
-    
-    
-    <summary type="html">准备工具   Win11电脑一台 一双手   安装安卓 首先我们先打开设置 时间和地区&amp;gt;语言和区域  黄色区域调整成美国 然后下载安卓 {% btn solid center large::下载安卓::https://apps.microsoft.com/detail/9P3395VX91NR?hl=zh-cn&amp;amp;gl=US::fas fa-download %} 点击GET，跳转到应...</summary>
-    
-    
-    
-    <category term="Win11" scheme="https://www.yt-blog.top/categories/Win11/"/>
-    
-    
-    <category term="Win11" scheme="https://www.yt-blog.top/tags/Win11/"/>
-    
-    <category term="安卓11" scheme="https://www.yt-blog.top/tags/%E5%AE%89%E5%8D%9311/"/>
     
   </entry>
   
