@@ -74,6 +74,15 @@
   </url>
   
   <url>
+    <loc>https://www.yt-blog.top/1719000931/index.html</loc>
+    
+    <lastmod>2024-06-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yt-blog.top/1719000931.html</loc>
     
     <lastmod>2024-06-21</lastmod>
@@ -551,14 +560,14 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/tags/JS/</loc>
+    <loc>https://www.yt-blog.top/tags/simplest-server/</loc>
     <lastmod>2024-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/tags/simplest-server/</loc>
+    <loc>https://www.yt-blog.top/tags/JS/</loc>
     <lastmod>2024-06-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
