@@ -137,15 +137,6 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/62238/</loc>
-    
-    <lastmod>2024-03-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/%E7%8B%82%E7%8A%AC%E7%97%85%E6%AF%92.html</loc>
     
     <lastmod>2024-03-01</lastmod>
@@ -774,13 +765,6 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/categories/%E5%85%AC%E5%91%8A/</loc>
-    <lastmod>2024-06-29</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/categories/%E7%BD%91%E8%AF%BE%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2024-06-29</lastmod>
     <changefreq>weekly</changefreq>
@@ -788,14 +772,14 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/categories/%E8%B0%88%E8%B0%88%E5%BD%93%E4%B8%8B/</loc>
+    <loc>https://www.yt-blog.top/categories/%E5%9B%BD%E5%BA%86/</loc>
     <lastmod>2024-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/categories/%E5%9B%BD%E5%BA%86/</loc>
+    <loc>https://www.yt-blog.top/categories/%E8%B0%88%E8%B0%88%E5%BD%93%E4%B8%8B/</loc>
     <lastmod>2024-06-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
