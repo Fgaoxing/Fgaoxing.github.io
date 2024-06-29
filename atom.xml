@@ -6,7 +6,7 @@
   <link href="https://www.yt-blog.top/atom.xml" rel="self"/>
   
   <link href="https://www.yt-blog.top/"/>
-  <updated>2024-05-19T06:38:07.190Z</updated>
+  <updated>2024-06-29T07:20:59.119Z</updated>
   <id>https://www.yt-blog.top/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【谈谈当下】青少年口中的垃圾话语</title>
+    <link href="https://www.yt-blog.top/65052/"/>
+    <id>https://www.yt-blog.top/65052/</id>
+    <published>2024-06-29T06:06:43.422Z</published>
+    <updated>2024-06-29T07:20:59.119Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>今天不谈科技，不谈技术，谈个社会现象。</p><p>本文由于一些原因可能会有不好的话语，会使用*和黑幕进行一定程度遮挡</p></blockquote><!--more--><p>学校里周围的人越来越喜欢“出口成脏”了</p><p>似乎同学们并不了解他们说的内容都是写什么</p><p>举几个例子</p><ul><li>我操你*逼</li><li>操**</li><li>我去*</li><li>我透*</li><li>ji巴</li></ul><p>………</p><p>很显然，大部分的同学并不清楚这是什么意思，甚至当做口头禅挂在嘴边<br />并且根据我在班级中的调查，有些人甚至知道是什么意思</p><blockquote><p>A:国粹是啥？<br />B:卧槽</p></blockquote><p>你可能还觉得这是一个段子，但是这并不好笑<br />如果一个国家的国粹是一句难听的脏话，甚至是……话，成为了年轻人，少年人的口头禅被轻易的随口说出，这个国家的文化究竟是怎么样的乌烟瘴气（我承认这个词形容不算准确）<br />很多人是从其他人或者网络上听来的，但是也是只知道这句话，不知道其意思<br />高速信息化带来的弊端，在心智尚未成熟的时候接触到了过多的信息，而当前的心智又无法做出真正的明辨是非</p><p>现在国人可以说谈“性”色变，这本来是出于好意，希望未成年人不要涉及这个“禁忌”<br />但其实这反而起了反效果，网络时代获取信息的方式多种多样，并且几乎所有的信息你都可以在其上获取到<br />但是因为谁都可以发布信息导致质量参差不齐，对错混杂<br />这导致很多无法明辨是非的未成年甚至成年人，掉入这个陷阱，又因为没有正确和完善的性教育，导致未成年几乎是成了这些脏话的“易感人群”</p><p>我这里干脆介绍一下上面这些话是什么意思吧：</p><ol><li>“操、去和透”的意思就是性交（这里不需要知道具体很什么，你只要知道是男女之间的繁殖动作）</li><li>ji巴和逼则是男和女性的性器官</li></ol><p>很明显，这些话不能随便说，国粹也不是一句骂人的话，他是有着5000年底蕴的文化沉淀</p><p>我知道，很多人可能改不过来，那你可以选择一些更文明的骂人方式<br />哪怕你说对方脑子灌水了也比上面这些话来得好</p>]]></content>
+    
+    
+    <summary type="html"> 今天不谈科技，不谈技术，谈个社会现象。 本文由于一些原因可能会有不好的话语，会使用*和黑幕进行一定程度遮挡  学校里周围的人越来越喜欢“出口成脏”了 似乎同学们并不了解他们说的内容都是写什么 举几个例子  我操你*逼 操** 我去* 我透* ji巴  ……… 很显然，大部分的同学并不清楚这是什么意思，甚至当做口头禅挂在嘴边 并且根据我在班级中的调查，有些人甚至知道是什么意思  A:国粹是啥？ B...</summary>
+    
+    
+    
+    <category term="话题" scheme="https://www.yt-blog.top/categories/%E8%AF%9D%E9%A2%98/"/>
+    
+    <category term="谈谈当下" scheme="https://www.yt-blog.top/categories/%E8%B0%88%E8%B0%88%E5%BD%93%E4%B8%8B/"/>
+    
+    
+    <category term="谈谈当下" scheme="https://www.yt-blog.top/tags/%E8%B0%88%E8%B0%88%E5%BD%93%E4%B8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>【LSP】微型滚动动画库</title>
@@ -258,7 +281,7 @@
     <link href="https://www.yt-blog.top/51672/"/>
     <id>https://www.yt-blog.top/51672/</id>
     <published>2023-01-10T02:24:59.000Z</published>
-    <updated>2024-06-22T05:11:00.775Z</updated>
+    <updated>2024-06-29T15:21:07.734Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前情"><a class="header-anchor" href="#前情">¶</a>前情</h2><p>给各位道个歉，好久没更新了</p><p>给大家带来一个好东西</p><p>众所周知，我会node.js</p><p>但是把，我一开始就选择了http库（就是原生库）</p><p>所以用express就会不太顺手</p><p>但是原生的http又没啥东西，就很难受几乎什么都要自己写，包括cookie的操作</p><p>所以我就基于原生的http包写了一个框架，使用路由的方式，可以使用无服务器函数</p><a class="ghcard" rel="external nofollow noopener noreferrer" href="https://github.com/simplest-server/simplest-server"><img src="https://github-readme-stats.xaoxuu.com//api/pin/?username=simplest-server&repo=simplest-server&show_owner=true"/></a><p><a href="https://github.com/simplest-server/simplest-server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="#007ec6"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">GitHub</text><text x="915" y="140" transform="scale(.1)" fill="#fff" textLength="850">simplest-server</text></g></svg></a><br /><a href="https://www.npmjs.com/package/simplest-server"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="#e05d44"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">NPM</text><text x="915" y="140" transform="scale(.1)" fill="#fff" textLength="850">simplest-server</text></g></svg></a><br /><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="20"><clipPath id="r"><rect width="140" height="20" fill="#fff" rx="3"/></clipPath><g clip-path="url(#r)"><rect width="45" height="20" fill="#555"/><rect x="45" width="95" height="20" fill="green"/><rect width="140" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text x="235" y="140" transform="scale(.1)" fill="#fff">LGPL</text><text x="915" y="140" transform="scale(.1)" fill="#fff">License</text></g></svg></p><h2 id="有关包的一些东西"><a class="header-anchor" href="#有关包的一些东西">¶</a>有关包的一些东西</h2><p>目前由JS编写使用CJS引入，后续可能会迁移到Ts</p><p>这个NPM包目前是测试版，但基础功能已经OK了</p><p>你可以这样引入</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ss = <span class="built_in">require</span>(<span class="string">&#x27;simplest-server&#x27;</span>);</span><br></pre></td></tr></table></figure><p>目前包含如下函数</p><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> ss = <span class="built_in">require</span>(<span class="string">&#x27;simplest-server&#x27;</span>);</span><br><span class="line">ss.<span class="property">http</span> # http服务</span><br><span class="line">ss.<span class="property">maps</span> # 本地文件映射</span><br><span class="line">ss.<span class="property">map</span> # 本地文件映射</span><br><span class="line">ss.<span class="property">ejs</span> # 集成的<span class="variable constant_">EJS</span></span><br><span class="line">ss.<span class="property">err</span> # 返回报错页面</span><br></pre></td></tr></table></figure><p>更多文档看<a href="https://www.yt-blog.top/docs/simplest-server/">Simplest Server 文档</a>（大概率没写完，所以只能等）</p><h3 id="关于https"><a class="header-anchor" href="#关于https">¶</a>关于https</h3><p>目前不支持，后续加入</p>]]></content>
     
@@ -314,7 +337,7 @@
     <link href="https://www.yt-blog.top/20220727/1444/"/>
     <id>https://www.yt-blog.top/20220727/1444/</id>
     <published>2022-07-27T14:44:53.000Z</published>
-    <updated>2024-06-22T05:11:00.775Z</updated>
+    <updated>2024-06-29T15:21:07.734Z</updated>
     
     <content type="html"><![CDATA[<!-- 本文是[吹神求杀](https://chuishen.cf/)的QQ聊天截屏--><!--用时1小时15分--><!--![img](https://unpkg.com/ytblogimg/1668250571787.png)--><!--![img](https://unpkg.com/ytblogimg/1668250589674.webp)--><blockquote><p>文章被删除了！</p></blockquote><style>.ai-summary{display: none;}</style>]]></content>
     
@@ -421,7 +444,7 @@
     <link href="https://www.yt-blog.top/20220405/1600/"/>
     <id>https://www.yt-blog.top/20220405/1600/</id>
     <published>2022-04-05T16:00:00.000Z</published>
-    <updated>2024-06-22T05:11:00.775Z</updated>
+    <updated>2024-06-29T15:21:07.734Z</updated>
     
     <content type="html"><![CDATA[<p><img src="https://bu.dusays.com/2022/04/06/13cfa5c2f39aa.png" width="100px" height="100px"></img></p><h2 id="前言"><a class="header-anchor" href="#前言">¶</a>前言</h2><p>学校要求上网课开摄像头，关键是前后各一个，我就只有有一个设备所以就要这样</p><h2 id="需求"><a class="header-anchor" href="#需求">¶</a>需求</h2><blockquote><p>Win电脑</p></blockquote><h2 id="方法"><a class="header-anchor" href="#方法">¶</a>方法</h2><h3 id="OBS"><a class="header-anchor" href="#OBS">¶</a>OBS</h3><p><a href="https://obsproject.com/zh-cn/download">下载 | OBS</a><br /><a href="https://obsproject.com/forum/resources/obs-virtualcam.949/">下载OBS Virtualcam插件</a><br />选择1/4个摄像头<br />打开OBS</p><p><img src="https://bu.dusays.com/2022/04/06/154492e6089f3.png" alt="https://bu.dusays.com/2022/04/06/154492e6089f3.png" /><br />左右摆放<br /><img src="https://bu.dusays.com/2022/04/06/cdcf1c6dec957.png" alt="cdcf1c6dec957.png (1982×1120) (dusays.com)" /><br />然后选择这个摄像头<br /><img src="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" alt="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" /></p><h2 id="注意"><a class="header-anchor" href="#注意">¶</a>注意</h2><p>使用时请保证电脑性能，且电脑摄像头没有占用。</p><blockquote><p>本教程仅支持Windows，这是OBS Virtualcam的原因。</p></blockquote>]]></content>
     
@@ -431,31 +454,6 @@
     <summary type="html">&lt;p&gt;&lt;img src=&quot;https://bu.dusays.com/2022/04/06/13cfa5c2f39aa.png&quot; width=&quot;100px&quot; height=&quot;100px&quot;&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;h2 id=&quot;前言&quot;&gt;&lt;a class=&quot;header-anchor</summary>
       
-    
-    
-    
-    <category term="网课生活" scheme="https://www.yt-blog.top/categories/%E7%BD%91%E8%AF%BE%E7%94%9F%E6%B4%BB/"/>
-    
-    
-    <category term="网课" scheme="https://www.yt-blog.top/tags/%E7%BD%91%E8%AF%BE/"/>
-    
-    <category term="虚拟" scheme="https://www.yt-blog.top/tags/%E8%99%9A%E6%8B%9F/"/>
-    
-    <category term="OBS" scheme="https://www.yt-blog.top/tags/OBS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>虚拟的我</title>
-    <link href="https://www.yt-blog.top/19398/"/>
-    <id>https://www.yt-blog.top/19398/</id>
-    <published>2022-03-28T16:00:00.000Z</published>
-    <updated>2024-01-18T17:28:22.792Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="前言"><a class="header-anchor" href="#前言">¶</a>前言</h2><p>小课也要开摄像头，所以我就借鉴了一下<a href="https://zh.moegirl.org.cn/%E8%99%9A%E6%8B%9FUP%E4%B8%BB">VUP</a>技术,然后我就变成了这样<img src="https://cdn2.chuqis.com/gh/fgaoxing/myimg/webp/%E8%99%9A%E6%8B%9F%E7%9A%84%E6%88%91.webp" alt="https://cdn2.chuqis.com/gh/fgaoxing/myimg/webp/虚拟的我.webp" /></p><h2 id="需求"><a class="header-anchor" href="#需求">¶</a>需求</h2><blockquote><p>Win电脑</p></blockquote><h2 id="方法"><a class="header-anchor" href="#方法">¶</a>方法</h2><h3 id="AcFun"><a class="header-anchor" href="#AcFun">¶</a>AcFun</h3><p>下载<a href="https://cdn.aixifan.com/downloads/AcFunVirtualTool_sign_1.27.0.1302_78ab87.exe">AcFun面部助手</a><br />然后登录/注册账户<br />上传模型，或点击拼脸<br />相关可参考<br /><a href="https://www.acfun.cn/v/ac30907800">【新手向】面捕开播教程！保姆级～超详细视频演示～</a></p><p><a href="https://www.acfun.cn/a/ac30917342">AcFun面捕助手用户Q&amp;A手册</a></p><h3 id="OBS"><a class="header-anchor" href="#OBS">¶</a>OBS</h3><p><a href="https://obsproject.com/zh-cn/download">下载 | OBS</a><br /><a href="https://obsproject.com/forum/resources/obs-virtualcam.949/">下载OBS Virtualcam插件</a><br />选择1/4个摄像头<br />打开OBS<br /><img src="https://bu.dusays.com/2022/03/29/25ddf7c9c3a3d.png" alt="https://bu.dusays.com/2022/03/29/25ddf7c9c3a3d.png" /><br /><img src="https://bu.dusays.com/2022/03/29/ff0dfb557d332.png" alt="https://bu.dusays.com/2022/03/29/ff0dfb557d332.png" /><br />然后选择这个摄像头<br /><img src="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" alt="https://bu.dusays.com/2022/03/29/97d19de19e0c5.png" /></p><h2 id="注意"><a class="header-anchor" href="#注意">¶</a>注意</h2><p>使用时请保证电脑性能，且电脑摄像头没有占用。<br />不然（<s>我这是开了省电模式</s>）<br /><img src="https://bu.dusays.com/2022/03/29/879d7555b6bfd.png" alt="https://bu.dusays.com/2022/03/29/879d7555b6bfd.png" /><br />窗口不会，但是挂件会有影响</p><blockquote><p>本教程仅支持Windows，这是AcFun的原因。</p></blockquote>]]></content>
-    
-    
-    <summary type="html">前言 小课也要开摄像头，所以我就借鉴了一下VUP技术,然后我就变成了这样 需求  Win电脑  方法 AcFun 下载AcFun面部助手 然后登录/注册账户 上传模型，或点击拼脸 相关可参考 【新手向】面捕开播教程！保姆级～超详细视频演示～ AcFun面捕助手用户Q&amp;amp;A手册 OBS 下载 | OBS 下载OBS Virtualcam插件 选择1/4个摄像头 打开OBS   然后选择这个摄像...</summary>
     
     
     
