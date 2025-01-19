@@ -662,13 +662,6 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/tags/%E5%91%A8%E8%AE%B0/</loc>
-    <lastmod>2025-01-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/tags/%E7%BD%91%E8%AF%BE/</loc>
     <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -684,6 +677,13 @@
   
   <url>
     <loc>https://www.yt-blog.top/tags/OBS/</loc>
+    <lastmod>2025-01-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/%E5%91%A8%E8%AE%B0/</loc>
     <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -804,7 +804,7 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/categories/%E5%9B%BD%E5%BA%86/</loc>
+    <loc>https://www.yt-blog.top/categories/%E7%BD%91%E8%AF%BE%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -818,7 +818,7 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/categories/%E7%BD%91%E8%AF%BE%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://www.yt-blog.top/categories/%E5%9B%BD%E5%BA%86/</loc>
     <lastmod>2025-01-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
