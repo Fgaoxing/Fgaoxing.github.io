@@ -74,6 +74,15 @@
   </url>
   
   <url>
+    <loc>https://www.yt-blog.top/32971/</loc>
+    
+    <lastmod>2025-02-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yt-blog.top/51882/</loc>
     
     <lastmod>2025-01-19</lastmod>
@@ -487,6 +496,34 @@
   </url>
   
   <url>
+    <loc>https://www.yt-blog.top/tags/Hexo/</loc>
+    <lastmod>2025-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/</loc>
+    <lastmod>2025-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/Go/</loc>
+    <lastmod>2025-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/HTML%E6%A8%A1%E6%9D%BF/</loc>
+    <lastmod>2025-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://www.yt-blog.top/tags/AI/</loc>
     <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -509,20 +546,6 @@
   
   <url>
     <loc>https://www.yt-blog.top/tags/OpenAI/</loc>
-    <lastmod>2025-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/tags/Hexo/</loc>
-    <lastmod>2025-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yt-blog.top/tags/%E7%BD%91%E7%AB%99%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -585,13 +608,6 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/tags/JS/</loc>
-    <lastmod>2025-02-03</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yt-blog.top/tags/%E6%98%BE%E5%BE%AE%E9%95%9C%E4%B8%8B%E7%9A%84%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
@@ -600,6 +616,13 @@
   
   <url>
     <loc>https://www.yt-blog.top/tags/%E7%B3%BB%E5%88%97/</loc>
+    <lastmod>2025-02-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yt-blog.top/tags/JS/</loc>
     <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -804,14 +827,14 @@
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/categories/%E7%BD%91%E8%AF%BE%E7%94%9F%E6%B4%BB/</loc>
+    <loc>https://www.yt-blog.top/categories/%E8%B0%88%E8%B0%88%E5%BD%93%E4%B8%8B/</loc>
     <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://www.yt-blog.top/categories/%E8%B0%88%E8%B0%88%E5%BD%93%E4%B8%8B/</loc>
+    <loc>https://www.yt-blog.top/categories/%E7%BD%91%E8%AF%BE%E7%94%9F%E6%B4%BB/</loc>
     <lastmod>2025-02-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
